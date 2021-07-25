@@ -29,4 +29,5 @@ minima:
 theme: minima
 
 plugins:
+ - jekyll-minifier
  - jekyll-seo-tag
