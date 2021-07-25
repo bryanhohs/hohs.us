@@ -1,31 +1,21 @@
-# hohs.us
 title: Bryan Hohs
 email: bryan@hohs.us
 description: >-
   https://hohs.us
 
-# social links
 twitter_username: bryanhohs
 github_username:  bryanhohs
 
-# site settings
 timezone: America/Chicago
 baseurl: ""
 url: "https://hohs.us"
 permalink: /:title:output_ext
 
-# exclude
-exclude:
-  - .jekyll-cache/
-  - Gemfile
-  - Gemfile.lock
-
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: false
 
 minima:
   date_format: "%m-%d-%Y"
 
-# build settings
 theme: minima
 
 plugins:
