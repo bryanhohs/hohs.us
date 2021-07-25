@@ -6,17 +6,25 @@ description: >-
 twitter_username: bryanhohs
 github_username:  bryanhohs
 
-timezone: America/Chicago
 baseurl: ""
 url: "https://hohs.us"
 permalink: /:title:output_ext
 
 show_excerpts: false
 
+google_analytics: UA-19916047-2
+
+theme: minima
+
 minima:
   date_format: "%m-%d-%Y"
 
-theme: minima
+sass:
+  style: compressed
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 
 plugins:
  - jekyll-minifier
