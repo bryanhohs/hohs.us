@@ -21,4 +21,4 @@ This tutorial requires chrome os in developer mode. You can enable it in a previ
 8. Follow the prompts to install the rom then press q.
 9. Reboot
 
-Your system hash been flashed and it's ready to run Linux!
+Your system has been flashed and it's ready to run Linux!
