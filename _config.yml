@@ -19,6 +19,9 @@ theme: minima
 minima:
   date_format: "%m-%d-%Y"
 
+feed:
+  disable: true
+
 sass:
   style: compressed
 
