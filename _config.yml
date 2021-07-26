@@ -24,6 +24,7 @@ sass:
 
 jekyll-minifier:
   compress_css: false 
+  remove_intertag_spaces: true
   uglifier_args:
     harmony: true
 
