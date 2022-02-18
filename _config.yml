@@ -1,0 +1,32 @@
+title: Bryan Hohs
+email: bryan@hohs.us
+
+twitter_username: bryanhohs
+github_username:  bryanhohs
+
+baseurl: ""
+url: "https://hohs.us"
+permalink: /:title:output_ext
+
+show_excerpts: false
+
+paginate: 6 
+paginate_path: "/blog/page:num/"
+
+theme: minima
+
+minima:
+  date_format: "%m-%d-%Y"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md

@@ -1,0 +1,25 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow" />
+<meta name="theme-color" content="#424242" />
+<meta name="description" content="My personal blog" />
+<meta name="twitter:image" content="/images/profile.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@BryanHohs" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ page.excerpt }}" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/assets/images/logo192.png" />
+<link rel="apple-touch-icon" href="/assets/images/logo256.png" />
+<link rel="apple-touch-icon" href="/assets/images/logo384.png" />
+<link rel="apple-touch-icon" href="/assets/images/logo512.png" />
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
