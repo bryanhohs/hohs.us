@@ -12,7 +12,7 @@ show_preview_links: true
 site_url: https://hohs.us
 logo_url: https://hohs.us/assets/uploads/logo.jpg
 media_folder: "assets/uploads"
-public_folder: "/assets/upload"
+public_folder: "/assets/uploads"
 
 slug:
   encoding: "unicode"
