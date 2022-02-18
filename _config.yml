@@ -6,12 +6,12 @@ github_username:  bryanhohs
 
 baseurl: ""
 url: "https://hohs.us"
-permalink: /:title:output_ext
+permalink: /post/:title/
 
 show_excerpts: false
 
 paginate: 6 
-paginate_path: "/blog/page:num/"
+paginate_path: /page/:num
 
 theme: minima
 
