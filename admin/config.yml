@@ -10,7 +10,7 @@ publish_mode: editorial_workflow
 search: true
 show_preview_links: true
 site_url: https://hohs.us
-logo_url: https://hohs.us/assets/upload/logo.jpg
+logo_url: https://hohs.us/assets/uploads/logo.jpg
 media_folder: "assets/uploads"
 public_folder: "/assets/upload"
 
