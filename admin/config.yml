@@ -1,8 +1,27 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: bryanhohs/hohs.us 
   branch: master
+  site_domain: hohs.us
+  use_graphql: true
 
+locale: "en"
+publish_mode: editorial_workflow
+search: true
+show_preview_links: true
+site_url: https://hohs.us
+logo_url: https://assets/upload/logo.jpg
 media_folder: "assets/uploads"
+public_folder: "/assets/upload"
+
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+name: bryan 
+display_name: Bryan Hohs
+position: Owner 
 
 collections:
   - name: "posts"
@@ -14,9 +33,60 @@ collections:
     editor:
       preview: true 
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+         label: 'Author',
+         name: 'author',
+         widget: 'relation',
+         collection: 'authors',
+         display_fields: [display_name],
+         search_fields: [display_name],
+         value_field: 'name',
+       }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: 'authors'
+    label: 'Authors'
+    folder: '_authors/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
+      - { label: 'Short Name', name: 'name', widget: 'string' }
+      - { label: 'Display Name', name: 'display_name', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Links'
+        name: 'about'
+        file: 'links.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: 'Navigation'
+        name: 'navigation'
+        file: '_data/navigation.yml'
+        fields:
+          - label: 'Navigation Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }

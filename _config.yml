@@ -1,27 +1,20 @@
 title: Bryan Hohs
 email: bryan@hohs.us
-
 twitter_username: bryanhohs
 github_username:  bryanhohs
-
 baseurl: ""
 url: "https://hohs.us"
+repository: bryanhohs/hohs.us
 permalink: /post/:title/
-
 show_excerpts: false
-
 paginate: 6 
 paginate_path: /page/:num
-
 theme: minima
-
 minima:
   date_format: "%m-%d-%Y"
-
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -29,4 +22,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
+  - minima.gemspec
+  - netlify.toml
   - README.md
