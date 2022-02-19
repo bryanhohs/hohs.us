@@ -18,10 +18,6 @@ slug:
   clean_accents: true
   sanitize_replacement: "-"
 
-name: bryan 
-display_name: Bryan Hohs
-position: Owner 
-
 collections:
   - name: "posts"
     label: "Posts"
