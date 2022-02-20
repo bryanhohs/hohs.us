@@ -23,4 +23,4 @@ If you do sell it for altcoins like Ethereum for example, make sure you buy it b
 
 The best feature on [Coinbase](https://www.coinbase.com/join/hohs_l) is the convert option. It's in the trade section and you can convert Bitcoin practically with zero fees.
 
-Happy trading!
+Enjoy!

@@ -16,4 +16,4 @@ Make sure you have your machine backed up as enabling developer mode wipes all d
 3. Wait for the Recovery screen.
 4. Press Ctrl+D to turn on Developer mode.
 
-Reboot
+Enjoy!

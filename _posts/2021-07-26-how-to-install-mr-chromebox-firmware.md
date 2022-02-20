@@ -22,3 +22,5 @@ This tutorial requires chrome os in developer mode. You can enable it in a previ
 9. Reboot
 
 Your system has been flashed and it's ready to run Linux!
+
+Enjoy!

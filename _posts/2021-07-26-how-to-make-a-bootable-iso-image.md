@@ -18,3 +18,5 @@ The easiest way to make a bootable iso image is with Balena Etcher. It's fast, e
 5. Start the flash.
 
 After flashing, Etcher will automatically verify that the write was successful.
+
+Enjoy!

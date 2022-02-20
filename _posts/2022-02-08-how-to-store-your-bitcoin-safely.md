@@ -16,3 +16,5 @@ The Ledger Nano S is the best wallet in my opinion. You can buy them on the Ledg
 If you use my affiliate link you get 20% off!
 
 <https://shop.ledger.com/?r=7af3d0184a64>
+
+Enjoy!

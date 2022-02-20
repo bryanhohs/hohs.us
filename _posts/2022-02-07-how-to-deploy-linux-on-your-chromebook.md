@@ -18,3 +18,5 @@ Before we move on, make sure you have enabled [Developer Mode](https://hohs.us/p
 3. Follow the prompts and install GalliumOS.
 
 Reboot your chromebook and you're all set to run linux on chrome!
+
+Enjoy!
