@@ -24,7 +24,7 @@ collections:
     folder: "_posts/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "_posts/{{fields.slug}}"
+    preview_path: "post/{{fields.slug}}"
     editor:
       preview: true 
     fields:

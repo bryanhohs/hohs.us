@@ -36,8 +36,8 @@ Next, we write a shell script to start our light node.
 bryan ~ ₿ vi ~/bin/geth.sh
 #!/usr/bin/env bash
 
-nice -50 geth                                   \
-        --mainnet                               \
+nice -50 geth                                           \
+                --mainnet                               \
 		--syncmode "light"                      \
 		--identity "node1.vps.dxv.network"      \
 		--cache "1024"                          \
