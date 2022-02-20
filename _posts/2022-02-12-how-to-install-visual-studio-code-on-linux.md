@@ -2,6 +2,7 @@
 layout: post
 title: How To Install Visual Studio Code On Linux
 category: blog
+author: bryan
 tags:
   - visual
   - studio

@@ -2,6 +2,7 @@
 layout: post
 title: How To Buy Bitcoins
 category: blog
+author: bryan
 tags:
   - bitcoin
   - internet

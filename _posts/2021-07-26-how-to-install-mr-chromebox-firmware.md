@@ -2,6 +2,7 @@
 layout: post
 title: How To Install Mr Chromebox Firmware
 category: blog
+author: bryan
 tags:
   - chrome
   - developer

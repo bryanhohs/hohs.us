@@ -2,6 +2,7 @@
 layout: post
 title: How To Enable Your Firewall On Linux
 category: blog
+author: bryan
 tags:
   - linux
   - firewall

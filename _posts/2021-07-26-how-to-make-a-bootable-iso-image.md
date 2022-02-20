@@ -2,6 +2,7 @@
 layout: post
 title: How To Make A Bootable ISO Image
 category: blog
+author: bryan
 tags:
   - iso
   - balena

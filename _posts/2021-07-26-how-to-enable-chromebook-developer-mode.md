@@ -2,6 +2,7 @@
 layout: post
 title: How To Enable Chromebook Developer Mode
 category: blog
+author: bryan
 tags:
   - chromebook
   - developer

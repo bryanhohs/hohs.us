@@ -2,6 +2,7 @@
 layout: post
 title: How To Install Raspberry Pi 4 UEFI Firmware
 category: blog
+author: bryan
 tags:
   - rpi
   - uefi

@@ -2,6 +2,7 @@
 layout: post
 title: How To Make A Bitcoin Node On Raspberry Pi 4
 category: blog
+author: bryan
 tags:
   - bitcoin
   - node

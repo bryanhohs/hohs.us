@@ -2,6 +2,7 @@
 layout: post
 title: How To Deploy Linux On Your Chromebook
 category: blog
+author: bryan
 tags:
   - chromebook
   - galliumos

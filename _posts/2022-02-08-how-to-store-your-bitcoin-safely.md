@@ -2,6 +2,7 @@
 layout: post
 title: How To Store Your Bitcoin Safely
 category: blog
+author: bryan
 tags:
   - ledger
   - crypto

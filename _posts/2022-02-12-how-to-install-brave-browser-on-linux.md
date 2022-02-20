@@ -2,6 +2,7 @@
 layout: post
 title: How To Install Brave Browser On Linux
 category: blog
+author: bryan
 tags:
   - brave
   - browser

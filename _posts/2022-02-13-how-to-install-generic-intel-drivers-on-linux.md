@@ -2,6 +2,7 @@
 layout: post
 title: How To Install Generic Intel Drivers On Linux
 category: blog
+author: bryan
 tags:
   - intel
   - drivers
