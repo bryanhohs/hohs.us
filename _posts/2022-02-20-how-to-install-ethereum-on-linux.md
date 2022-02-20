@@ -36,17 +36,17 @@ Next, we write a shell script to start our light node.
 bryan ~ ₿ vi ~/bin/geth.sh
 #!/usr/bin/env bash
 
-nice -50 geth								    \
-		--mainnet						        \
-		--syncmode "light"					    \
-		--identity "node1.vps.dxv.network"		\
-		--cache "1024"						    \
-		--http							        \
-		--http.addr "127.0.0.1"					\
-		--http.port "8545"					    \
-		--http.api "eth,net,web3,personal"		\
-		--http.corsdomain "*"					\
-		--http.vhosts "*"					    \
+nice -50 geth                                   \
+        --mainnet                               \
+		--syncmode "light"                      \
+		--identity "node1.vps.dxv.network"      \
+		--cache "1024"                          \
+		--http                                  \
+		--http.addr "127.0.0.1"                 \
+		--http.port "8545"                      \
+		--http.api "eth,net,web3,personal"      \
+		--http.corsdomain "*"                   \
+		--http.vhosts "*"                       \
 		--nat "none"
 exit 0
 ```
