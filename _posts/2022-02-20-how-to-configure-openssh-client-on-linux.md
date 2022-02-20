@@ -27,10 +27,10 @@ Host *
    HashKnownHosts yes
    HostbasedKeyTypes rsa-sha2-512,rsa-sha2-256,ssh-rsa
    HostKeyAlgorithms rsa-sha2-512,rsa-sha2-256,ssh-rsa
-   IdentityFile ~/.ssh/identity
    IdentityFile ~/.ssh/id_rsa
    IdentityFile ~/.ssh/id_dsa
    IdentityFile ~/.ssh/id_ecdsa
+   IdentityFile ~/.ssh/id_ed25519
    IdentitiesOnly yes
    KexAlgorithms diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256
    MACs hmac-sha2-512,hmac-sha2-256,hmac-sha1
