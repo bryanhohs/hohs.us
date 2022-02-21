@@ -7,7 +7,7 @@ backend:
 
 publish_mode: editorial_workflow
 search: true
-show_preview_links: no 
+show_preview_links: false
 site_url: https://hohs.us
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
