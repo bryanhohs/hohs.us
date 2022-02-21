@@ -45,8 +45,6 @@ nice -50 geth                                           \
 		--http.addr "127.0.0.1"                 \
 		--http.port "8545"                      \
 		--http.api "eth,net,web3,personal"      \
-		--http.corsdomain "*"                   \
-		--http.vhosts "*"                       \
 		--nat "none"
 exit 0
 ```
