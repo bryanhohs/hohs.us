@@ -19,6 +19,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 exclude:
   - .sass-cache/
   - .jekyll-cache/
