@@ -5,10 +5,9 @@ backend:
   site_domain: hohs.us
   use_graphql: true
 
-locale: "en"
 publish_mode: editorial_workflow
 search: true
-show_preview_links: true
+show_preview_links: no 
 site_url: https://hohs.us
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"

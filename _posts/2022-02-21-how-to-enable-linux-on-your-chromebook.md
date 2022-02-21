@@ -9,7 +9,7 @@ tags:
   - debian
   - linux
 ---
-This tutorial is easy compared to [How To Deploy Linux On Your Chromebook](https://hohs.us/post/how-to-deploy-linux-on-your-chromebook/). We simply enable the developer setting for the Linux Development Environment.
+This tutorial is easy compared to [How To Deploy Linux On Your Chromebook](https://hohs.us/post/how-to-deploy-linux-on-your-chromebook). We simply enable the developer setting for the Linux Development Environment.
 
 1. Go to the settings control panel by clicking on the time and then click Settings.
 2. Scroll down to the Advanced section.
