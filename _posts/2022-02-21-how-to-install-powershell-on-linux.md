@@ -25,7 +25,7 @@ bryan ~ ₿ sudo apt-get update
 # Install PowerShell
 bryan ~ ₿ sudo apt-get install -y powershell
 # Start PowerShell
-pwsh
+bryan ~ ₿ pwsh
 ```
 
 Enjoy!
