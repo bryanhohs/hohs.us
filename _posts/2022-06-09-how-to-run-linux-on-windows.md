@@ -27,7 +27,7 @@ To change distro and set it default:
 PS C:\> wsl --install -d "distro"
 ```
 
-After you set your username and password you can access WSL from the Command Prompt, PowerShell, or OpenSSH. I'm accessing my machine over the network on Linux via OpenSSH.
+After you set your username and password you can access WSL from the Command Prompt, PowerShell, or OpenSSH. I'm accessing my machine over the network on Linux via OpenSSH. To install OpenSSH on Windows, check out my tutorial [here](https://hohs.us/post/how-to-enable-ssh-on-windows/).
 
 ```
 bryan@linux:~$ ssh -t bryan@DESKTOP-53F8BQX wsl
