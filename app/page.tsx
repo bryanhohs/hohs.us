@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="App">
+    <div>
       <video className='videoTag' autoPlay loop muted id="bg-video">
         <source src="/hd_1920_1080_30fps.mp4" type='video/mp4' />
       </video>
