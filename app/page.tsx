@@ -8,8 +8,8 @@ export default function Home() {
       </video>
       <div className="flex justify-center align-center w-full items-center h-160 mx-auto">
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <Image className="rounded-full" src="/profile.png" alt="Bryan C. Hohs" width={150} height={150} />
-          <h1 className="text-center text-3xl font-[900] mt-5">Bryan C. Hohs</h1>
+          <Image className="rounded-full" src="/profile.png" alt="Bryan C. Hohs" loading="eager" width={150} height={150} />
+          <h1 className="text-center text-3xl font-black mt-5">Bryan C. Hohs</h1>
           <h3 className="text-center text-md font-normal mt-3">CEO, Tech, Entrepreneur</h3>
           <div className="text-sm pt-5">&copy; 2026 Bryan C. Hohs</div>
         </div>
