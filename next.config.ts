@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: false
+  basePath: "",
+  cacheComponents: true,
+  compress: true,
+  crossOrigin: "anonymous",
+  devIndicators: false,
+  reactStrictMode: false,
 };
 
 export default nextConfig;
