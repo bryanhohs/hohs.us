@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bryan C. Hohs",
-  description: "bryan hohs, bryanhohs, hohs",
+  description: "hohs, bryan hohs, bryanhohs, bryanchohs",
 };
 
 export default function RootLayout({
