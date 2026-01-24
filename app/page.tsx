@@ -3,8 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <video className="videoTag" autoPlay loop muted id="bg-video" preload="auto">
+      <video preload="metadata" autoPlay loop muted id="bg-video">
         <source src="/hd_1920_1080_30fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
       </video>
       <div className="flex justify-center align-center w-full items-center h-160 mx-auto">
         <div className="w-full h-full flex flex-col justify-center items-center">
