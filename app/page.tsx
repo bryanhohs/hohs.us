@@ -15,17 +15,17 @@ export default function Home() {
           <h3 className="text-center text-md font-normal mt-5">CEO, Tech, Entrepreneur</h3>
           <ul className="list-none flex flex-row space-x-5 mt-5">
             <li>
-              <a href="mailto:bryan.c@hohs.us" target="_blank">
+              <a href="mailto:bryan.c@hohs.us" target="_self">
                 <EnvelopeIcon className="size-10 text-black-500" />
               </a>
             </li>
             <li>
-              <a href="sms:13124399036" target="_blank">
+              <a href="sms:13124399036" target="_self">
                 <ChatBubbleLeftRightIcon className="size-10 text-black-500" />
               </a>
             </li>
             <li>
-              <a href="tel:13124399036" target="_blank">
+              <a href="tel:13124399036" target="_self">
                 <PhoneIcon className="size-10 text-black-500" />
               </a>
             </li>
@@ -37,7 +37,9 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="text-center static bottom-0 text-sm mt-5">&copy; 2026 Bryan C. Hohs</div>
+      <div className="text-center static bottom-0 text-sm mt-5">
+        <a className="text-black-500 hover:none" href="https://github.com/bryanhohs" target="_blank">&copy; 2026 Bryan C. Hohs</a>
+      </div>
     </div>
   );
 }
