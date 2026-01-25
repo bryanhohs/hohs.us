@@ -8,7 +8,7 @@ export default function Home() {
         <source src="/hd_1920_1080_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
       </video>
-      <div className="flex justify-center align-center w-full items-center h-160 mx-auto">
+      <div className="flex justify-center align-center items-center w-full h-150 mx-auto">
         <div className="w-full h-full flex flex-col justify-center items-center">
           <Image className="rounded-full" src="/profile.png" alt="Bryan C. Hohs" loading="eager" width={150} height={150} />
           <h1 className="text-center text-3xl font-black mt-5">Bryan C. Hohs</h1>
@@ -35,9 +35,9 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <div className="text-sm pt-5 mt-5">&copy; 2026 Bryan C. Hohs</div>
         </div>
       </div>
+      <div className="text-center static bottom-0 text-sm mt-5">&copy; 2026 Bryan C. Hohs</div>
     </div>
   );
 }
