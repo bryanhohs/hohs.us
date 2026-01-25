@@ -38,7 +38,9 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center static bottom-0 text-sm mt-5">
-        <a className="text-black-500 hover:none" href="https://github.com/bryanhohs" target="_blank">&copy; 2026 Bryan C. Hohs</a>
+        <a className="text-black-500 hover:none" href="https://github.com/bryanhohs/hohs.us" target="_blank">
+          &copy; 2026 Bryan C. Hohs
+        </a>
       </div>
     </div>
   );
