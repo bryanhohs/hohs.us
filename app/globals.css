@@ -25,13 +25,3 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   z-index: 10;
 }
-
-#bg-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
