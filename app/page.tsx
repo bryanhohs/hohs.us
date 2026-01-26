@@ -4,7 +4,7 @@ import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } f
 export default function Home() {
   return (
     <div>
-      <video preload="metadata" autoPlay loop muted id="bg-video">
+      <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" preload="metadata" autoPlay loop muted>
         <source src="/hd_1920_1080_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
       </video>
@@ -14,22 +14,22 @@ export default function Home() {
           <h1 className="text-center text-3xl font-black mt-5">Bryan C. Hohs</h1>
           <h3 className="text-center text-md font-normal mt-5">CEO, Tech, Entrepreneur</h3>
           <ul className="list-none flex flex-row space-x-5 mt-5">
-            <li className="align-center items-center">
+            <li className="align-center items-center z-10">
               <a href="tel:13124399036" target="_self">
                 <PhoneIcon className="size-10 text-black-500" />
               </a>
             </li>
-            <li className="align-center items-center">
+            <li className="align-center items-center z-10">
               <a href="sms:13124399036" target="_self">
                 <ChatBubbleLeftRightIcon className="size-10 text-black-500" />
               </a>
             </li>
-            <li className="align-center items-center">
+            <li className="align-center items-center z-10">
               <a href="https://linktr.ee/bryanchohs" target="_blank">
                 <GlobeAmericasIcon className="size-10 text-black-500" />
               </a>
             </li>
-            <li className="align-center items-center">
+            <li className="align-center items-center z-10">
               <a href="mailto:bryan.c@hohs.us" target="_self">
                 <EnvelopeIcon className="size-10 text-black-500" />
               </a>
