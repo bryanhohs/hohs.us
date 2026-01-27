@@ -10,7 +10,14 @@ export default function Hohs() {
       </video>
       <div className="flex justify-center align-center items-center w-full h-150 mx-auto">
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <Image className="rounded-full" src="/profile.png" alt="Bryan C. Hohs" loading="eager" width={150} height={150} />
+          <Image
+            className="rounded-full"
+            src="/profile.png"
+            alt="Bryan C. Hohs"
+            loading="eager"
+            width={150}
+            height={150}
+          ></Image>
           <h1 className="text-center text-3xl font-black mt-5">Bryan C. Hohs</h1>
           <h3 className="text-center text-md font-normal mt-5">CEO, Tech, Entrepreneur</h3>
           <ul className="list-none flex flex-row space-x-5 mt-5">
