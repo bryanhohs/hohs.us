@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
-export default function Home() {
+export default function Hohs() {
   return (
     <div>
       <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" preload="metadata" autoPlay loop muted>
