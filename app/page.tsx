@@ -1,10 +1,11 @@
 import Image from "next/image";
+import ProfileImage from "../public/assets/images/profile.png";
 import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function Hohs() {
   return (
     <div>
-      <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" preload="metadata" autoPlay loop muted>
+      <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" preload="metadata" autoPlay loop muted playsInline>
         <source src="/assets/videos/hd_1920_1080_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
       </video>
@@ -12,7 +13,7 @@ export default function Hohs() {
         <div className="w-full h-full flex flex-col justify-center items-center">
           <Image
             className="rounded-full"
-            src="/profile.png"
+            src={ProfileImage}
             alt="Bryan C. Hohs"
             loading="eager"
             width={150}
