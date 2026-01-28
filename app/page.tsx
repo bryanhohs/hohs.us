@@ -5,7 +5,7 @@ export default function Hohs() {
   return (
     <div>
       <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1]" preload="metadata" autoPlay loop muted>
-        <source src="/hd_1920_1080_30fps.mp4" type="video/mp4" />
+        <source src="/assets/videos/hd_1920_1080_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
       </video>
       <div className="flex justify-center align-center items-center w-full h-150 mx-auto">
