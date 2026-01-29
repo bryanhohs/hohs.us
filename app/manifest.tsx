@@ -4,6 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Bryan C. Hohs',
     short_name: 'Bryan Hohs',
+    description: "Bryan C. Hohs' personal website.",
     start_url: '/',
     display: 'standalone',
     background_color: '#0a0a0a',
