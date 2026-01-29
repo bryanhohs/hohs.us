@@ -15,7 +15,8 @@ const notoMono = Noto_Sans_Mono({
 
 export const metadata: Metadata = {
   title: "Bryan C. Hohs",
-  description: "hohs, bryan hohs, bryanhohs, bryanchohs",
+  description: "Bryan C. Hohs' personal website.",
+  keywords: "hohs, bryan hohs, bryanhohs, bryanchohs",
 };
 
 export default function RootLayout({
