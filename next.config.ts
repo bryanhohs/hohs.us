@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "",
   cacheComponents: true,
   compress: true,
-  crossOrigin: "anonymous",
-  devIndicators: true,
   reactStrictMode: false,
 };
 
