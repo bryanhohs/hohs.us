@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   compress: true,
   crossOrigin: "anonymous",
-  devIndicators: false,
+  devIndicators: true,
   reactStrictMode: false,
 };
 
