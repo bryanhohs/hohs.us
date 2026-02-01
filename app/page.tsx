@@ -5,10 +5,6 @@ import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } f
 export default function Hohs() {
   return (
     <div>
-      <video className="fixed top-0 left-0 w-full h-full object-cover z-[-1] transform-gpu" preload="metadata" autoPlay loop muted playsInline>
-        <source src="/assets/videos/hd_1920_1080_30fps.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-      </video>
       <div className="flex justify-center align-center items-center w-full h-150 mx-auto">
         <div className="w-full h-full flex flex-col justify-center items-center">
           <Image
