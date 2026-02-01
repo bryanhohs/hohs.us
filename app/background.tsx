@@ -6,5 +6,5 @@ export default function VideoBackground() {
           Your browser does not support the video tag.
       </video>
     </div>
-);
+  );
 }
