@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import "./globals.css";
-import "./styles/styles.css";
+import Icons from "./icons";
 import VideoBackground from "./background";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import "./globals.css";
+import "./styles/styles.css";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
   title: "Bryan C. Hohs",
   description: "Bryan C. Hohs' personal website.",
   keywords: "hohs, bryan hohs, bryanhohs, bryanchohs",
+  authors: [{ name: "Bryan C. Hohs", url: "https://www.hohs.us" }],
+  creator: "Bryan C. Hohs",
+  publisher: "Bryan C. Hohs",
 };
 
 export default function RootLayout({
@@ -32,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
+        <Icons />
         <VideoBackground />
         {children}
         <SpeedInsights />
