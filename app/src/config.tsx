@@ -7,6 +7,7 @@ type Config = {
     readonly site_year: number;
     readonly site_url: string;
     readonly site_description: string;
+    readonly site_title: string;
     readonly gemini_model: string;
     readonly gemini_system: string;
     readonly gemini_user: string;

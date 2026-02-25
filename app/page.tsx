@@ -11,7 +11,7 @@ export const maxDuration = 15;
 
 export default function Hohs() {
   const HOHS_FULL = config.site_name_full;
-  const HOHS_SHORT = config.site_name_short;
+  const HOHS_TITLE = config.site_title;
   const HOHS_YEAR = config.site_year;
   const HOHS_URL = config.site_url;
   const GEMINI = Google();
@@ -38,7 +38,7 @@ export default function Hohs() {
             variant="body1"
             gutterBottom
             color={grey[50]}>
-              CEO, Tech, Entrepreneur
+              {HOHS_TITLE}
           </Typography>
         </div>
         <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
