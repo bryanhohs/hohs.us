@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import Icons from "./icons";
-import VideoBackground from "./background";
+import VideoBackground from "./src/background";
+import Icons from "./src/icons";
 import "./globals.css";
 import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
