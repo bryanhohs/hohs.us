@@ -24,9 +24,12 @@ export default function Hohs() {
           sx={{ width: 150, height: 150 }}>
         </Avatar>
         <div className="flex text-center text-3xl font-extrabold z-10 mt-10">
-          <h1>
-            {HOHS_FULL}
-          </h1>
+          <Typography
+            variant="h3"
+            gutterBottom
+            color={grey[50]}>
+              {HOHS_FULL}
+          </Typography>
         </div>
         <div className="text-center text-md font-normal z-10 mt-5">
           <Typography
