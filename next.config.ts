@@ -1,32 +1,24 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
+  devIndicators: false,
+  cacheComponents: false,
   compress: true,
   reactStrictMode: false,
+  images: {
+    localPatterns: [
+      {
+        pathname: '/assets/images/**',
+        search: '',
+      },
+    ],
+  },
 };
 
 module.exports = {
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
-          },
-        ],
-      },
-    ]
+  crossOrigin: 'anonymous',
+  images: {
+    qualities: [100, 75, 50, 25],
   },
 }
 

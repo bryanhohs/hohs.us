@@ -6,7 +6,7 @@ export default function Hohs() {
   return (
     <div>
       <div className="flex justify-center align-center items-center w-full h-full mx-auto">
-        <div className="w-full h-160 flex flex-col justify-center items-center">
+        <div className="w-full h-full flex flex-col justify-center items-center my-50">
           <Image
             className="rounded-full"
             src={ProfileImage}
@@ -16,7 +16,7 @@ export default function Hohs() {
             height={150}
           ></Image>
           <h1 className="text-center text-3xl font-bold mt-5">Bryan C. Hohs</h1>
-          <h3 className="text-center text-md font-normal mt-5">CEO, Tech, Entrepreneur</h3>
+          <h2 className="text-center text-md font-normal mt-5">CEO, Tech, Entrepreneur</h2>
           <ul className="list-none flex flex-row space-x-5 mt-5">
             <li className="align-center items-center z-10">
               <a href="tel:13124399036" target="_self">

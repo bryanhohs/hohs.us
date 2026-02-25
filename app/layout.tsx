@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import Icons from "./icons";
 import VideoBackground from "./background";
+import "./globals.css";
+import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
-import "./globals.css";
-import "./styles/styles.css";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -37,8 +37,8 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-        <VideoBackground />
-        {children}
+          <VideoBackground />
+            {children}
         <SpeedInsights />
         <Analytics />
       </body>
