@@ -35,7 +35,7 @@ export const Theme = createTheme({
         fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
         h3: {
             fontWeight: 900,
-            fontSize: '4.5rem',
+            fontSize: '2.5rem',
             color: grey[50],
     },
     },
