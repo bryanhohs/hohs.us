@@ -86,7 +86,7 @@ export default function Hohs() {
             in={true}
             timeout="auto">
             <Typography
-              variant="body1"
+              variant="body2"
               gutterBottom
               color={grey[50]}>
                 &ldquo;{GEMINI}&rdquo;
