@@ -38,24 +38,44 @@ export default function Hohs() {
         </div>
         <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
           <li className="align-center items-center z-10">
-            <a href="tel:13124399036" target="_self">
+            <Link
+              underline="none"
+              gutterBottom
+              color={grey[50]}
+              href="tel:13124399036"
+              target="_self">
               <PhoneIcon fontSize="large" className="size-10 text-normal-500" />
-            </a>
+            </Link>
           </li>
           <li className="align-center items-center z-10">
-            <a href="sms:13124399036" target="_self">
+            <Link
+              underline="none"
+              gutterBottom
+              color={grey[50]}
+              href="sms:13124399036"
+              target="_self">
               <ChatIcon fontSize="large" className="size-10 text-normal-500" />
-            </a>
+            </Link>
           </li>
           <li className="align-center items-center z-10">
-            <a href="https://linktr.ee/bryanchohs" target="_blank">
+            <Link
+              underline="none"
+              gutterBottom
+              color={grey[50]}
+              href="https://linktr.ee/bryanchohs"
+              target="_blank">
               <PublicIcon fontSize="large" className="size-10 text-normal-500" />
-            </a>
+            </Link>
           </li>
           <li className="align-center items-center z-10">
-            <a href="mailto:bryan.c@hohs.us" target="_self">
+            <Link
+              underline="none"
+              gutterBottom
+              color={grey[50]}
+              href="mailto:bryan.c@hohs.us" 
+              target="_self">
               <EmailIcon fontSize="large" className="size-10 text-normal-500" />
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="flex text-center z-10 mt-10">
