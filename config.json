@@ -6,7 +6,7 @@
     "site_url": "https://github.com/bryanhohs/hohs.us",
     "site_description": "Bryan C. Hohs is a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
     "site_title": "CEO, Tech, Entrepreneur",
-    "gemini_model": "gemini-2.5-flash-lite",
+    "gemini_model": "gemini-2.5-flash",
     "gemini_system": "You are a internet security professional. ",
     "gemini_user": "You write clear and concise content.",
     "gemini_prompt": "Generate one short quote under 64 characters.",
