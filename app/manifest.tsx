@@ -1,14 +1,21 @@
+import config from "./src/config";
 import type { MetadataRoute } from 'next'
+import { grey } from '@mui/material/colors';
 
 export default function manifest(): MetadataRoute.Manifest {
+  const HOHS_FULL = config.site_name_full;
+  const HOHS_SHORT = config.site_name_short;
+  const HOHS_DESCRIPTION = config.site_description;
   return {
-    name: 'Bryan C. Hohs',
-    short_name: 'Bryan Hohs',
-    description: "Bryan C. Hohs' personal website.",
-    start_url: '/',
+    lang: 'en-US',
+    name: HOHS_FULL,
+    short_name: HOHS_SHORT,
+    description: HOHS_DESCRIPTION,
+    id: '/?source=pwa',
+    start_url: '/?source=pwa',
     display: 'standalone',
-    background_color: '#0a0a0a',
-    theme_color: '#0a0a0a',
+    background_color: grey[900],
+    theme_color: grey[900],
     icons: [
       {
         "src": "assets/icons/icon-48x48.png",

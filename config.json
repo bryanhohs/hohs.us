@@ -1,0 +1,21 @@
+{
+    "site_home": "https://www.hohs.us",
+    "site_name_short": "Bryan Hohs",
+    "site_name_full": "Bryan C. Hohs",
+    "site_year": 2026,
+    "site_url": "https://github.com/bryanhohs/hohs.us",
+    "site_description": "Bryan C. Hohs is a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
+    "gemini_model": "gemini-2.5-flash",
+    "gemini_system": "You are a security professional. ",
+    "gemini_user": "You write simple, clear, and concise content.",
+    "gemini_tokens": 100,
+    "gemini_temp": 0.75,
+    "gemini_prompt": "Generate one short quote for a computer hacker",
+    "meta_title": "Bryan C. Hohs",
+    "meta_description": "Bryan C. Hohs is a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
+    "meta_keywords": "bryan hohs, bryan c. hohs, software developer, business owner",
+    "meta_author_name": "Bryan C. Hohs",
+    "meta_author_url": "https://www.hohs.us",
+    "meta_creator": "Bryan C. Hohs",
+    "meta_publisher": "Bryan C. Hohs"
+}

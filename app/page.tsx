@@ -1,15 +1,27 @@
+import config from "./src/config";
+import Google from "./src/ai";
 import Image from "next/image";
 import ProfileImage from "../public/assets/images/profile.png";
+import { Typography, Link, Grow } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
+export const dynamic = 'force-dynamic';
+export const maxDuration = 15;
+
 export default function Hohs() {
+  const HOHS_FULL = config.site_name_full;
+  const HOHS_SHORT = config.site_name_short;
+  const HOHS_YEAR = config.site_year;
+  const HOHS_URL = config.site_url;
+  const GEMINI = Google();
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50 mx-auto">
         <Image
           className="rounded-full"
           src={ProfileImage}
-          alt="Bryan C. Hohs"
+          alt={HOHS_FULL}
           quality={100}
           preload={true}
           loading="eager"
@@ -18,13 +30,16 @@ export default function Hohs() {
         ></Image>
         <div className="flex text-center text-3xl font-extrabold z-10 mt-10">
           <h1>
-            Bryan C. Hohs
+            {HOHS_FULL}
           </h1>
         </div>
         <div className="text-center text-md font-normal z-10 mt-5">
-          <h2>
-            CEO, Tech, Entrepreneur
-          </h2>
+          <Typography
+            variant="body1"
+            gutterBottom
+            color={grey[50]}>
+              CEO, Tech, Entrepreneur
+          </Typography>
         </div>
         <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
           <li className="align-center items-center z-10">
@@ -48,10 +63,27 @@ export default function Hohs() {
             </a>
           </li>
         </ul>
+        <div className="flex text-center z-10 mt-10">
+          <Grow
+            in={true}
+            timeout="auto">
+            <Typography
+              variant="body1"
+              gutterBottom
+              color={grey[50]}>
+                &ldquo;{GEMINI}&rdquo;
+            </Typography>
+          </Grow>
+        </div>
         <div className="text-center static bottom-0 text-sm z-10 mt-10">
-          <a className="text-normal-500 hover:none" href="https://github.com/bryanhohs/hohs.us" target="_blank">
-            &copy; 2026 Bryan C. Hohs
-          </a>
+          <Link
+            underline="none"
+            gutterBottom
+            color={grey[50]}
+            href={HOHS_URL}
+            target="_blank">
+              &copy; {HOHS_YEAR} {HOHS_FULL}
+          </Link>
         </div>
       </main>
     </div>
