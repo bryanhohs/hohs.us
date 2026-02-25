@@ -39,7 +39,7 @@ export default function Hohs() {
               {HOHS_TITLE}
           </Typography>
         </div>
-        <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
+        <ul className="flex flex-row list-none space-x-5 z-10 mt-5">
           <li className="align-center items-center">
             <Link
               underline="none"
@@ -93,7 +93,7 @@ export default function Hohs() {
             </Typography>
           </Grow>
         </div>
-        <div className="text-center static bottom-0 text-sm z-10 mt-10">
+        <div className="flex text-center z-10 mt-10">
           <Link
             underline="none"
             gutterBottom
