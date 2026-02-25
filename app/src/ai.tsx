@@ -16,7 +16,7 @@ async function Google() {
       prompt: GEMINI_PROMPT,
       experimental_transform: smoothStream(),
     });
-    const GEMINI: string = (await text).replace(/[*“”"']/g, '');
+    const GEMINI: string = (await text).replace(/[`*“”"']/g, '');
     return GEMINI;
   } catch (error) {
     console.error('Error generating ai:', error);
