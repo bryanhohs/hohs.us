@@ -3,7 +3,7 @@
 export default function VideoBackground() {
   return (
     <video
-      className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+      className="fixed top-0 left-0 w-full h-full object-cover z-[-1] transform-cpu transform-gpu"
       preload="metadata"
       autoPlay
       loop
