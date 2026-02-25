@@ -3,10 +3,6 @@ import config from "./src/config";
 import VideoBackground from "./src/background";
 import ClientProviders from './src/ClientProviders';
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import { ThemeProvider } from '@mui/material/styles';
-import { Paper, Box } from '@mui/material';
-import EmotionRegistry from './src/EmotionRegistry';
-import theme from './src/theme';
 import "./globals.css";
 import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -23,13 +19,13 @@ const notoMono = Noto_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: config.site_title,
-  description: config.site_description,
+  title: config.meta_title,
+  description: config.meta_description,
   keywords: config.meta_keywords,
   authors: [{ name: config.meta_author_name, url: config.meta_author_url }],
   creator: config.meta_creator,
   publisher: config.meta_publisher,
-  applicationName: config.site_name_full,
+  applicationName: config.meta_title,
   icons: {
     apple: [
       { url: '/assets/icons/apple-touch-icon-57x57.png', sizes: '57x57' },
