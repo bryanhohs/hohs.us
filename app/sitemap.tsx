@@ -5,7 +5,7 @@ export default function Sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: config.site_home,
-      lastModified: new Date(),
+      lastModified: new Date().toISOString(),
       changeFrequency: 'weekly',
       priority: 1,
     },

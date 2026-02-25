@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   cacheComponents: false,
   compress: true,
   reactStrictMode: false,
+  crossOrigin: 'anonymous',
   images: {
     localPatterns: [
       {
@@ -12,14 +13,8 @@ const nextConfig: NextConfig = {
         search: '',
       },
     ],
-  },
-};
-
-module.exports = {
-  crossOrigin: 'anonymous',
-  images: {
     qualities: [100, 75, 50, 25],
   },
-}
+};
 
 export default nextConfig;

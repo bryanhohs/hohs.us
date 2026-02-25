@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import config from "./src/config";
 import VideoBackground from "./src/background";
+import ClientProviders from './src/ClientProviders';
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
 import { Paper, Box } from '@mui/material';
 import EmotionRegistry from './src/EmotionRegistry';
-import responsiveFontSizes from './src/theme';
+import theme from './src/theme';
 import "./globals.css";
 import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -66,16 +67,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
-        <ThemeProvider theme={responsiveFontSizes}>
-          <EmotionRegistry>
-            <VideoBackground />
-            <Paper elevation={1} square sx={{ minHeight: '100vh', background: 'transparent' }}>
-              <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-                {children}
-              </Box>
-            </Paper>
-          </EmotionRegistry>
-        </ThemeProvider>
+        <ClientProviders>
+          <VideoBackground />
+          {children}
+        </ClientProviders>
         <SpeedInsights />
         <Analytics />
       </body>
