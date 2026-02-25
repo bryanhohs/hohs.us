@@ -31,7 +31,7 @@ export default function Hohs() {
               {HOHS_FULL}
           </Typography>
         </div>
-        <div className="text-center text-md z-10">
+        <div className="text-center text-md mt-3 z-10">
           <Typography
             variant="body1"
             gutterBottom
