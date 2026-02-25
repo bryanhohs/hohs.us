@@ -1,5 +1,3 @@
-# Welcome to my node project at www.hohs.us
-
 ## Code Style
 
 - **Language**: TypeScript with strict mode enabled
