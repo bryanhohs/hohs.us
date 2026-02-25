@@ -1,13 +1,12 @@
 import config from "./src/config";
 import type { MetadataRoute } from 'next'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const HOHS_HOME = config.site_home;
+export default function Sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: HOHS_HOME,
+      url: config.site_home,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
   ]

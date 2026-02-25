@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import config from "./src/config";
 import VideoBackground from "./src/background";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
 import { Paper, Box } from '@mui/material';
 import EmotionRegistry from './src/EmotionRegistry';
-import responsiveTheme from './src/theme';
+import responsiveFontSizes from './src/theme';
 import "./globals.css";
 import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -21,13 +22,13 @@ const notoMono = Noto_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bryan C. Hohs",
-  description: "Bryan C. Hohs' personal website.",
-  keywords: "hohs, bryan hohs, bryanhohs, bryanchohs",
-  authors: [{ name: "Bryan C. Hohs", url: "https://www.hohs.us" }],
-  creator: "Bryan C. Hohs",
-  publisher: "Bryan C. Hohs",
-  applicationName: 'Bryan C. Hohs',
+  title: config.site_title,
+  description: config.site_description,
+  keywords: config.meta_keywords,
+  authors: [{ name: config.meta_author_name, url: config.meta_author_url }],
+  creator: config.meta_creator,
+  publisher: config.meta_publisher,
+  applicationName: config.site_name_full,
   icons: {
     apple: [
       { url: '/assets/icons/apple-touch-icon-57x57.png', sizes: '57x57' },
@@ -64,25 +65,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${notoSans.variable} ${notoMono.variable} antialiased`}
-      >
-          <ThemeProvider theme={responsiveTheme} defaultMode="light">
-            <EmotionRegistry>
-              <VideoBackground />
-                <Paper elevation={1} square={true} sx={{ minHeight: '100vh', background: 'transparent' }}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      minHeight: '100vh',
-                    }}>
-                      {children}
-                  </Box>
-                </Paper>
-              </EmotionRegistry>
-            </ThemeProvider>
-          <SpeedInsights />
+      <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
+        <ThemeProvider theme={responsiveFontSizes}>
+          <EmotionRegistry>
+            <VideoBackground />
+            <Paper elevation={1} square sx={{ minHeight: '100vh', background: 'transparent' }}>
+              <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+                {children}
+              </Box>
+            </Paper>
+          </EmotionRegistry>
+        </ThemeProvider>
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>

@@ -1,72 +1,68 @@
 import config from "./src/config";
 import type { MetadataRoute } from 'next'
-import { grey } from '@mui/material/colors';
 
-export default function manifest(): MetadataRoute.Manifest {
-  const HOHS_FULL = config.site_name_full;
-  const HOHS_SHORT = config.site_name_short;
-  const HOHS_DESCRIPTION = config.site_description;
+export default function Manifest(): MetadataRoute.Manifest {
   return {
     lang: 'en-US',
-    name: HOHS_FULL,
-    short_name: HOHS_SHORT,
-    description: HOHS_DESCRIPTION,
+    name: config.site_name_full,
+    short_name: config.site_name_short,
+    description: config.site_description,
     id: '/?source=pwa',
     start_url: '/?source=pwa',
     display: 'standalone',
-    background_color: grey[900],
-    theme_color: grey[900],
+    background_color: '#0A0A0A',
+    theme_color: '#0A0A0A',
     icons: [
       {
-        "src": "assets/icons/icon-48x48.png",
-        "sizes": "48x48",
-        "type": "image/png"
+        src: 'assets/icons/icon-48x48.png',
+        sizes: '48x48',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-72x72.png",
-        "sizes": "72x72",
-        "type": "image/png"
+        src: 'assets/icons/icon-72x72.png',
+        sizes: '72x72',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-96x96.png",
-        "sizes": "96x96",
-        "type": "image/png"
+        src: 'assets/icons/icon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-128x128.png",
-        "sizes": "128x128",
-        "type": "image/png"
+        src: 'assets/icons/icon-128x128.png',
+        sizes: '128x128',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-144x144.png",
-        "sizes": "144x144",
-        "type": "image/png"
+        src: 'assets/icons/icon-144x144.png',
+        sizes: '144x144',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-152x152.png",
-        "sizes": "152x152",
-        "type": "image/png"
+        src: 'assets/icons/icon-152x152.png',
+        sizes: '152x152',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
+        src: 'assets/icons/icon-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-256x256.png",
-        "sizes": "256x256",
-        "type": "image/png"
+        src: 'assets/icons/icon-256x256.png',
+        sizes: '256x256',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-384x384.png",
-        "sizes": "384x384",
-        "type": "image/png"
+        src: 'assets/icons/icon-384x384.png',
+        sizes: '384x384',
+        type: 'image/png',
       },
       {
-        "src": "assets/icons/icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
+        src: 'assets/icons/icon-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
     ],
   }
 }

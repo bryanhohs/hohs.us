@@ -1,13 +1,12 @@
 import config from "./src/config";
 import type { MetadataRoute } from 'next'
 
-export default function robots(): MetadataRoute.Robots {
-  const HOHS_HOME = config.site_home;
+export default function Robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: `${HOHS_HOME}/sitemap.xml`,
+    sitemap: `${config.site_home}/sitemap.xml`,
   }
 }
