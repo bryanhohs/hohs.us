@@ -1,4 +1,4 @@
-# AI Coding Agent Instructions
+# Welcome to my node project at https://wwww.hohs.us
 
 ## Code Style
 
