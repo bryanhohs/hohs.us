@@ -12,12 +12,12 @@ export default function ClientProviders({ children }: { children: React.ReactNod
     <ThemeProvider theme={theme}>
       <EmotionRegistry>
         <CssBaseline />
-        <Paper elevation={1} square sx={{ minHeight: '100vh', background: 'transparent' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            {children}
-          </Box>
-        </Paper>
-      </EmotionRegistry>
-    </ThemeProvider>
+          <Paper elevation={1} square sx={{ minHeight: '100vh', background: 'transparent' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+              {children}
+            </Box>
+          </Paper>
+        </EmotionRegistry>
+      </ThemeProvider>
   );
 }
