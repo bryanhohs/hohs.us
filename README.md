@@ -59,7 +59,7 @@ npm run format   # Auto-format code
 
 **Gemini API** ([ai.tsx](app/src/ai.tsx)):
 - Configured via `@ai-sdk/google`
-- Returns text with special chars stripped (`[`*"']/g`)
+- Returns text with special chars stripped (`[*"']/g`)
 - Uses experimental smooth streaming with 10ms delay
 
 **Analytics & Monitoring**:

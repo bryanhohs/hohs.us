@@ -13,7 +13,7 @@ async function generateAiText(): Promise<string> {
         chunking: 'word',
       }),
     });
-    return (await text).replace(/[`*"']/g, '');
+    return (await text).replace(/[*"']/g, '');
   } catch (error) {
     console.error('Error generating ai:', error);
     throw error;
