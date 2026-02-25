@@ -9,7 +9,7 @@
     "gemini_model": "gemini-2.5-flash-lite",
     "gemini_system": "You are a internet security professional. ",
     "gemini_user": "You write clear and concise content.",
-    "gemini_prompt": "Generate one short quote",
+    "gemini_prompt": "Generate one short quote under 48 characters.",
     "meta_title": "Bryan C. Hohs",
     "meta_description": "Bryan C. Hohs is a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
     "meta_keywords": "bryan hohs, bryan c. hohs, software developer, business owner",
