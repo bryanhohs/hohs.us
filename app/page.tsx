@@ -2,7 +2,6 @@ import config from "./src/config";
 import Google from "./src/ai";
 import { Avatar, Typography, Link, Grow } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline'
 import PhoneIcon from '@mui/icons-material/Phone';
 import ChatIcon from '@mui/icons-material/Chat';
 import PublicIcon from '@mui/icons-material/Public';
