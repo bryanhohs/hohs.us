@@ -18,12 +18,12 @@ export default function Hohs() {
   const GEMINI = Google();
   return (
     <div>
-      <main className="flex flex-col items-center w-full h-full my-50 mx-auto">
+      <main className="flex flex-col items-center w-full h-full my-50">
         <Avatar
           src="/assets/images/profile.png"
           sx={{ width: 150, height: 150 }}>
         </Avatar>
-        <div className="flex text-center mt-5 z-10">
+        <div className="flex text-center z-10 mt-5">
           <Typography
             variant="h3"
             gutterBottom
@@ -31,7 +31,7 @@ export default function Hohs() {
               {HOHS_FULL}
           </Typography>
         </div>
-        <div className="text-center text-md mt-3 z-10">
+        <div className="flex text-center z-10 mt-3">
           <Typography
             variant="body1"
             gutterBottom
