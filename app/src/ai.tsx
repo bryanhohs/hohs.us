@@ -7,8 +7,6 @@ async function Google() {
     const GEMINI_MODEL = google(`${config.gemini_model}`);
     const GEMINI_SYSTEM = config.gemini_system;
     const GEMINI_USER = config.gemini_user;
-    const GEMINI_TOKENS = config.gemini_tokens;
-    const GEMINI_TEMP = config.gemini_temp;
     const GEMINI_PROMPT = config.gemini_prompt;
     const { text } = await streamText({
       model: GEMINI_MODEL,

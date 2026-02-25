@@ -42,8 +42,8 @@ export default function RootLayout({
       >
           <Icons />
             <ThemeProvider theme={responsiveTheme} defaultMode="light">
-              <VideoBackground />
-                <EmotionRegistry>
+              <EmotionRegistry>
+                <VideoBackground />
                   <Paper elevation={1} square={true} sx={{ minHeight: '100vh', background: 'transparent' }}>
                     <Box
                       sx={{
