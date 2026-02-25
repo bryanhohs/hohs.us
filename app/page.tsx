@@ -23,7 +23,7 @@ export default function Hohs() {
           src="/assets/images/profile.png"
           sx={{ width: 150, height: 150 }}>
         </Avatar>
-        <div className="flex text-center text-3xl font-extrabold z-10 mt-10">
+        <div className="flex text-center mt-5 z-10">
           <Typography
             variant="h3"
             gutterBottom
@@ -31,7 +31,7 @@ export default function Hohs() {
               {HOHS_FULL}
           </Typography>
         </div>
-        <div className="text-center text-md font-normal z-10 mt-5">
+        <div className="text-center text-md z-10">
           <Typography
             variant="body1"
             gutterBottom
@@ -40,44 +40,44 @@ export default function Hohs() {
           </Typography>
         </div>
         <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
-          <li className="align-center items-center z-10">
+          <li className="align-center items-center">
             <Link
               underline="none"
               gutterBottom
               color={grey[50]}
               href="tel:13124399036"
               target="_self">
-                <PhoneIcon fontSize="large" className="size-10 text-normal-500" />
+                <PhoneIcon fontSize="large" />
             </Link>
           </li>
-          <li className="align-center items-center z-10">
+          <li className="align-center items-center">
             <Link
               underline="none"
               gutterBottom
               color={grey[50]}
               href="sms:13124399036"
               target="_self">
-                <ChatIcon fontSize="large" className="size-10 text-normal-500" />
+                <ChatIcon fontSize="large" />
             </Link>
           </li>
-          <li className="align-center items-center z-10">
+          <li className="align-center items-center">
             <Link
               underline="none"
               gutterBottom
               color={grey[50]}
               href="https://linktr.ee/bryanchohs"
               target="_blank">
-                <PublicIcon fontSize="large" className="size-10 text-normal-500" />
+                <PublicIcon fontSize="large" />
             </Link>
           </li>
-          <li className="align-center items-center z-10">
+          <li className="align-center items-center">
             <Link
               underline="none"
               gutterBottom
               color={grey[50]}
               href="mailto:bryan.c@hohs.us"
               target="_self">
-                <EmailIcon fontSize="large" className="size-10 text-normal-500" />
+                <EmailIcon fontSize="large" />
             </Link>
           </li>
         </ul>
