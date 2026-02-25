@@ -72,7 +72,7 @@ export default function Hohs() {
               underline="none"
               gutterBottom
               color={grey[50]}
-              href="mailto:bryan.c@hohs.us" 
+              href="mailto:bryan.c@hohs.us"
               target="_self">
               <EmailIcon fontSize="large" className="size-10 text-normal-500" />
             </Link>
