@@ -1,10 +1,12 @@
 import config from "./src/config";
 import Google from "./src/ai";
-import Image from "next/image";
-import ProfileImage from "../public/assets/images/profile.png";
-import { Typography, Link, Grow } from '@mui/material';
+import { Avatar, Typography, Link, Grow } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { ChatBubbleLeftRightIcon, EnvelopeIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline'
+import PhoneIcon from '@mui/icons-material/Phone';
+import ChatIcon from '@mui/icons-material/Chat';
+import PublicIcon from '@mui/icons-material/Public';
+import EmailIcon from '@mui/icons-material/Email';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 15;
@@ -18,16 +20,11 @@ export default function Hohs() {
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50 mx-auto">
-        <Image
-          className="rounded-full"
-          src={ProfileImage}
+        <Avatar
           alt={HOHS_FULL}
-          quality={100}
-          preload={true}
-          loading="eager"
-          width={150}
-          height={150}
-        ></Image>
+          src="/assets/images/profile.png"
+          sx={{ width: 150, height: 150 }}>
+        </Avatar>
         <div className="flex text-center text-3xl font-extrabold z-10 mt-10">
           <h1>
             {HOHS_FULL}
@@ -44,22 +41,22 @@ export default function Hohs() {
         <ul className="list-none flex flex-row space-x-5 z-10 mt-5">
           <li className="align-center items-center z-10">
             <a href="tel:13124399036" target="_self">
-              <PhoneIcon className="size-10 text-normal-500" />
+              <PhoneIcon fontSize="large" className="size-10 text-normal-500" />
             </a>
           </li>
           <li className="align-center items-center z-10">
             <a href="sms:13124399036" target="_self">
-              <ChatBubbleLeftRightIcon className="size-10 text-normal-500" />
+              <ChatIcon fontSize="large" className="size-10 text-normal-500" />
             </a>
           </li>
           <li className="align-center items-center z-10">
             <a href="https://linktr.ee/bryanchohs" target="_blank">
-              <GlobeAmericasIcon className="size-10 text-normal-500" />
+              <PublicIcon fontSize="large" className="size-10 text-normal-500" />
             </a>
           </li>
           <li className="align-center items-center z-10">
             <a href="mailto:bryan.c@hohs.us" target="_self">
-              <EnvelopeIcon className="size-10 text-normal-500" />
+              <EmailIcon fontSize="large" className="size-10 text-normal-500" />
             </a>
           </li>
         </ul>
