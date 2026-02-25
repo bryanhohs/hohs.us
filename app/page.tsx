@@ -44,7 +44,7 @@ export default function Hohs() {
               color={grey[50]}
               href="tel:13124399036"
               target="_self">
-              <PhoneIcon fontSize="large" className="size-10 text-normal-500" />
+                <PhoneIcon fontSize="large" className="size-10 text-normal-500" />
             </Link>
           </li>
           <li className="align-center items-center z-10">
@@ -54,7 +54,7 @@ export default function Hohs() {
               color={grey[50]}
               href="sms:13124399036"
               target="_self">
-              <ChatIcon fontSize="large" className="size-10 text-normal-500" />
+                <ChatIcon fontSize="large" className="size-10 text-normal-500" />
             </Link>
           </li>
           <li className="align-center items-center z-10">
@@ -64,7 +64,7 @@ export default function Hohs() {
               color={grey[50]}
               href="https://linktr.ee/bryanchohs"
               target="_blank">
-              <PublicIcon fontSize="large" className="size-10 text-normal-500" />
+                <PublicIcon fontSize="large" className="size-10 text-normal-500" />
             </Link>
           </li>
           <li className="align-center items-center z-10">
@@ -74,7 +74,7 @@ export default function Hohs() {
               color={grey[50]}
               href="mailto:bryan.c@hohs.us"
               target="_self">
-              <EmailIcon fontSize="large" className="size-10 text-normal-500" />
+                <EmailIcon fontSize="large" className="size-10 text-normal-500" />
             </Link>
           </li>
         </ul>
