@@ -18,7 +18,7 @@ export default function Hohs() {
   const GEMINI = Google();
   return (
     <div>
-      <main className="flex flex-col items-center w-full h-full my-50">
+      <main className="flex flex-col items-center w-full h-full z-10 my-50">
         <Avatar
           src="/assets/images/profile.png"
           sx={{ width: 150, height: 150 }}>
