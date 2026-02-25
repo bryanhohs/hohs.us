@@ -3,10 +3,10 @@ import config from "./src/config";
 import VideoBackground from "./src/background";
 import ClientProviders from './src/ClientProviders';
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import "./globals.css";
-import "./src/styles.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import "./globals.css";
+import "./src/styles.css";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
