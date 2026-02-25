@@ -2,29 +2,22 @@ import config from "./config";
 import { smoothStream, streamText } from 'ai';
 import { google } from '@ai-sdk/google';
 
-async function Google() {
+async function generateAiText(): Promise<string> {
   try {
-    const GEMINI_MODEL = google(`${config.gemini_model}`);
-    const GEMINI_SYSTEM = config.gemini_system;
-    const GEMINI_USER = config.gemini_user;
-    const GEMINI_PROMPT = config.gemini_prompt;
     const { text } = await streamText({
-      model: GEMINI_MODEL,
-      system:
-        GEMINI_SYSTEM +
-        GEMINI_USER,
-      prompt: GEMINI_PROMPT,
+      model: google(config.gemini_model),
+      system: `${config.gemini_system}\n${config.gemini_user}`,
+      prompt: config.gemini_prompt,
       experimental_transform: smoothStream({
         delayInMs: 10,
         chunking: 'word',
       }),
     });
-    const GEMINI: string = (await text).replace(/[`*“”"']/g, '');
-    return GEMINI;
+    return (await text).replace(/[`*"']/g, '');
   } catch (error) {
     console.error('Error generating ai:', error);
     throw error;
   }
 }
 
-export default Google;
+export default generateAiText;
