@@ -20,7 +20,6 @@ export default function Hohs() {
     <div>
       <main className="flex flex-col items-center w-full h-full my-50 mx-auto">
         <Avatar
-          alt={HOHS_FULL}
           src="/assets/images/profile.png"
           sx={{ width: 150, height: 150 }}>
         </Avatar>
