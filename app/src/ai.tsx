@@ -14,7 +14,10 @@ async function Google() {
         GEMINI_SYSTEM +
         GEMINI_USER,
       prompt: GEMINI_PROMPT,
-      experimental_transform: smoothStream(),
+      experimental_transform: smoothStream({
+        delayInMs: 15,
+        chunking: 'line',
+      }),
     });
     const GEMINI: string = (await text).replace(/[`*“”"']/g, '');
     return GEMINI;
