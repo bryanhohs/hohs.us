@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import VideoBackground from "./src/background";
+import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
+import { ThemeProvider } from '@mui/material/styles';
+import { Paper, Box } from '@mui/material';
+import EmotionRegistry from './src/EmotionRegistry';
+import responsiveTheme from './src/theme';
 import Icons from "./src/icons";
 import "./globals.css";
 import "./src/styles.css";
@@ -36,11 +40,24 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
-        <Icons />
-          <VideoBackground />
-            {children}
-        <SpeedInsights />
-        <Analytics />
+          <Icons />
+            <ThemeProvider theme={responsiveTheme} defaultMode="light">
+              <VideoBackground />
+                <EmotionRegistry>
+                  <Paper elevation={1} square={true} sx={{ minHeight: '100vh', background: 'transparent' }}>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        minHeight: '100vh',
+                      }}>
+                        {children}
+                    </Box>
+                  </Paper>
+                </EmotionRegistry>
+              </ThemeProvider>
+            <SpeedInsights />
+          <Analytics />
       </body>
     </html>
   );
