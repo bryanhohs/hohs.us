@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import config from "./src/config";
+import { Suspense } from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
 import VideoBackground from "./src/background";
 import ClientProviders from './src/ClientProviders';
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
@@ -64,8 +66,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
           <ClientProviders>
-            <VideoBackground />
-              {children}
+            <Suspense fallback={<div className="flex flex-col items-center w-full h-full z-10 my-100"><CircularProgress /></div>}>
+              <VideoBackground />
+                {children}
+              </Suspense>
             </ClientProviders>
           <SpeedInsights />
         <Analytics />
