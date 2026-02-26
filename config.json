@@ -7,7 +7,7 @@
     "site_description": "Bryan C. Hohs is a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
     "site_title": "CEO, Tech, Entrepreneur",
     "gemini_model": "gemini-3-flash-preview",
-    "gemini_system": "You are a professional business owner and software developer specializing in creating innovative web applications and digital solutions.",
+    "gemini_system": "You are a professional business owner.",
     "gemini_user": "You write clear and concise content.",
     "gemini_prompt": "Generate one short quote under 64 characters.",
     "meta_title": "Bryan C. Hohs",
