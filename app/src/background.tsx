@@ -11,7 +11,7 @@ export default function VideoBackground() {
       playsInline
     >
       <source src="/assets/videos/hd_1920_1080_30fps.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+        Your browser does not support the video tag.
     </video>
   );
 }

@@ -63,11 +63,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
-        <ClientProviders>
-          <VideoBackground />
-          {children}
-        </ClientProviders>
-        <SpeedInsights />
+          <ClientProviders>
+            <VideoBackground />
+              {children}
+            </ClientProviders>
+          <SpeedInsights />
         <Analytics />
       </body>
     </html>
