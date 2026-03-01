@@ -41,41 +41,45 @@ export default async function Hohs() {
             </Typography>
           </Stack>
         </div>
-        <ul className="flex flex-row list-none space-x-5 z-10 mt-5">
-          <li className="align-center items-center">
-            <Link
-              underline="none"
-              color={grey[50]}
-              href="tel:13124399036">
-                <PhoneIcon fontSize="large" />
-            </Link>
-          </li>
-          <li className="align-center items-center">
-            <Link
-              underline="none"
-              color={grey[50]}
-              href="sms:13124399036">
-                <ChatIcon fontSize="large" />
-            </Link>
-          </li>
-          <li className="align-center items-center">
-            <Link
-              underline="none"
-              color={grey[50]}
-              href="https://linktr.ee/bryanchohs"
-              target="_blank">
-                <PublicIcon fontSize="large" />
-            </Link>
-          </li>
-          <li className="align-center items-center">
-            <Link
-              underline="none"
-              color={grey[50]}
-              href="mailto:bryan.c@hohs.us">
-                <EmailIcon fontSize="large" />
-            </Link>
-          </li>
-        </ul>
+        <div className="flex text-center">
+          <Stack>
+            <ul className="list-none space-x-5">
+              <li className="align-center items-center">
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href="tel:13124399036">
+                    <PhoneIcon fontSize="large" />
+                </Link>
+              </li>
+              <li className="align-center items-center">
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href="sms:13124399036">
+                    <ChatIcon fontSize="large" />
+                </Link>
+              </li>
+              <li className="align-center items-center">
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href="https://linktr.ee/bryanchohs"
+                  target="_blank">
+                    <PublicIcon fontSize="large" />
+                </Link>
+              </li>
+              <li className="align-center items-center">
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href="mailto:bryan.c@hohs.us">
+                    <EmailIcon fontSize="large" />
+                </Link>
+              </li>
+            </ul>
+          </Stack>
+        </div>
         <div className="flex text-center italic z-10 mt-5">
           <Stack>
             <Grow
