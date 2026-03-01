@@ -70,7 +70,7 @@ export default async function Hohs() {
             </Link>
           </li>
         </ul>
-        <div className="flex text-center z-10 mt-10">
+        <div className="flex text-center italic z-10 mt-10">
           <Grow
             in={true}
             timeout="auto">
