@@ -20,8 +20,8 @@ async function generateAiText(): Promise<string> {
         } satisfies GoogleLanguageModelOptions,
       },
       experimental_transform: smoothStream({
-        delayInMs: 10,
-        chunking: 'word'
+        delayInMs: config.gemini_delay,
+        chunking: config.gemini_chunks as "word" | "line"
       }),
     });
     return (await text).replace(/[*"']/g, '');

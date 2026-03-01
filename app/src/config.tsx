@@ -20,6 +20,8 @@ type Config = {
   readonly gemini_thought: boolean;
   readonly gemini_thinking: string;
   readonly gemini_retries: number;
+  readonly gemini_delay: number;
+  readonly gemini_chunks: string;
 
   // Metadata
   readonly meta_title: string;
