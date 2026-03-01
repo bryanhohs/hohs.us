@@ -2,6 +2,7 @@ import { grey } from '@mui/material/colors';
 import { createTheme, responsiveFontSizes } from '@mui/material';
 
 const theme = createTheme({
+  modularCssLayers: '@layer theme, base, mui, components, utilities;',
   colorSchemes: {
     light: {
       palette: {
