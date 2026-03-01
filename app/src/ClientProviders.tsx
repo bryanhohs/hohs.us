@@ -3,7 +3,7 @@
 import React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-import { Container, Paper, Box } from '@mui/material';
+import { Paper, Box } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 

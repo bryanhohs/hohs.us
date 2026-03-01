@@ -10,7 +10,7 @@
   "gemini_tokens": 1024,
   "gemini_temp": 0.75,
   "gemini_system": "You are a professional business owner.",
-  "gemini_user": "You write clear and concise content.",
+  "gemini_user": "You write clear and concise content without duplicate answers.",
   "gemini_prompt": "Generate one short quote under 64 characters.",
   "gemini_thought": true,
   "gemini_thinking": "high",
