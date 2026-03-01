@@ -43,7 +43,7 @@ export default async function Hohs() {
         </div>
         <div className="flex text-center">
           <Stack>
-            <ul className="list-none space-x-5">
+            <ul className="flex flex-collist-none space-x-5">
               <li className="align-center items-center">
                 <Link
                   underline="none"
