@@ -15,6 +15,11 @@ type Config = {
   readonly gemini_system: string;
   readonly gemini_user: string;
   readonly gemini_prompt: string;
+  readonly gemini_tokens: number;
+  readonly gemini_temp: number;
+  readonly gemini_thought: boolean;
+  readonly gemini_thinking: string;
+  readonly gemini_retries: number;
 
   // Metadata
   readonly meta_title: string;
