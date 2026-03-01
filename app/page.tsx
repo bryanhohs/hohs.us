@@ -41,7 +41,7 @@ export default async function Hohs() {
             </Typography>
           </Stack>
         </div>
-        <div className="flex text-center z-10 mt-3">
+        <div className="flex text-center z-10 mt-5">
           <Stack>
             <ul className="flex flex-row list-none space-x-5">
               <li className="align-center items-center">
