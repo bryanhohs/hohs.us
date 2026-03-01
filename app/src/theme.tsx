@@ -34,8 +34,23 @@ const theme = createTheme({
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
     h3: {
       fontWeight: 900,
-      fontSize: '2.5rem',
+      fontSize: '2.75rem',
       color: grey[50],
+    },
+    body1: {
+      fontSize: '1.15rem',
+      color: grey[50],
+    },
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          h3: 'h3',
+          body1: 'div',
+          body2: 'div',
+        },
+      },
     },
   },
 });
