@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome check",
-    "format": "biome format --write"
+    "check": "pnpx @biomejs/biome check --write",
+    "lint": "pnpx @biomejs/biome lint --write",
+    "format": "pnpx @biomejs/biome format --write"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.34",

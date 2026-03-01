@@ -9,7 +9,7 @@
     "attributePosition": "auto"
   },
   "files": {
-    "includes": ["app/*.tsx app/src/*.tsx"]
+    "includes": ["./*.json ./app/*.tsx ./app/src/*.tsx"]
   },
   "linter": { "enabled": true, "rules": { "recommended": true } },
   "javascript": {
@@ -23,6 +23,11 @@
       "bracketSameLine": false,
       "quoteStyle": "single",
       "attributePosition": "auto"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
     }
   },
   "overrides": [
