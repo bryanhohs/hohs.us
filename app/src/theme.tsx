@@ -6,7 +6,7 @@ const theme = createTheme({
   colorSchemes: {
     light: {
       palette: {
-        mode: 'light',
+        mode: 'dark',
         background: {
           default: grey[900],
         },
