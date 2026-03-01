@@ -12,7 +12,7 @@ export default function ClientProviders({ children }: { children: React.ReactNod
     <AppRouterCacheProvider options={{ enableCssLayer: true }}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-          <Container maxWidth="lg">
+          <Container maxWidth="lg" disableGutters sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <Paper elevation={1} square sx={{ minHeight: '100vh', background: 'transparent' }}>
               <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 {children}
