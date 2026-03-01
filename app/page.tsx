@@ -21,7 +21,7 @@ export default async function Hohs() {
             sx={{ width: 150, height: 150 }}>
           </Avatar>
         </Stack>  
-        <div className="flex text-center z-10 mt-3">
+        <div className="flex text-center z-10 mt-5">
           <Stack>
             <Typography
               variant="h3"
