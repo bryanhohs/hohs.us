@@ -7,9 +7,6 @@ import ChatIcon from '@mui/icons-material/Chat';
 import PublicIcon from '@mui/icons-material/Public';
 import EmailIcon from '@mui/icons-material/Email';
 
-export const dynamic = 'force-dynamic';
-export const maxDuration = 30;
-
 export default async function Hohs() {
   const geminiText = await generateAiText();
   return (
@@ -84,7 +81,7 @@ export default async function Hohs() {
           <Stack>
             <Grow
               in={true}
-              timeout='auto'>
+              timeout={1000}>
               <Typography
                 variant='body2'
                 gutterBottom
