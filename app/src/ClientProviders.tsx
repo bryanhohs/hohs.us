@@ -7,9 +7,6 @@ import { Paper, Box } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 
-export const dynamic = 'force-dynamic';
-export const maxDuration = 30;
-
 export default function ClientProviders({ children }: { children: React.ReactNode }) {
   return (
     <AppRouterCacheProvider options={{ enableCssLayer: true }}>

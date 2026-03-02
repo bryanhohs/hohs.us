@@ -7,6 +7,9 @@ import ChatIcon from '@mui/icons-material/Chat';
 import PublicIcon from '@mui/icons-material/Public';
 import EmailIcon from '@mui/icons-material/Email';
 
+export const dynamic = 'force-dynamic';
+export const maxDuration = 30;
+
 export default async function Hohs() {
   const geminiText = await generateAiText();
   return (
