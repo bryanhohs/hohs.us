@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
-import config from "./src/config";
+import type { Metadata } from 'next';
+import config from './src/config';
 import { Suspense } from 'react';
-import Progress from "./src/loader";
-import VideoBackground from "./src/background";
-import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
+import Progress from './src/loader';
+import VideoBackground from './src/background';
+import { Noto_Sans, Noto_Sans_Mono } from 'next/font/google';
 import ClientProviders from './src/ClientProviders';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
-import "./globals.css";
-import "./src/styles.css";
+import './globals.css';
+import './src/styles.css';
 
 const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
-  subsets: ["latin"],
+  variable: '--font-noto-sans',
+  subsets: ['latin'],
 });
 
 const notoMono = Noto_Sans_Mono({
-  variable: "--font-noto-sans-mono",
-  subsets: ["latin"],
+  variable: '--font-noto-sans-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
         <ClientProviders>
           <Suspense fallback={<Progress />}>

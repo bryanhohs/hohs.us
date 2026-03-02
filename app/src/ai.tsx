@@ -1,4 +1,4 @@
-import config from "./config";
+import config from './config';
 import { google, GoogleLanguageModelOptions } from '@ai-sdk/google';
 import { smoothStream, streamText } from 'ai';
 
@@ -15,13 +15,13 @@ async function generateAiText(): Promise<string> {
         google: {
           thinkingConfig: {
             includeThoughts: config.gemini_thought,
-            thinkingLevel: config.gemini_thinking as "high" | "medium" | "low" | "minimal"
+            thinkingLevel: config.gemini_thinking as 'high' | 'medium' | 'low' | 'minimal'
           },
         } satisfies GoogleLanguageModelOptions,
       },
       experimental_transform: smoothStream({
         delayInMs: config.gemini_delay,
-        chunking: config.gemini_chunks as "word" | "line"
+        chunking: config.gemini_chunks as 'word' | 'line'
       }),
     });
     return (await text).replace(/[*"']/g, '');
