@@ -1,5 +1,6 @@
-import { notoSans, notoMono } from './src/fonts';
 import config from './src/config';
+import type { Metadata } from 'next';
+import { notoSans, notoMono } from './src/fonts';
 import { Suspense } from 'react';
 import Progress from './src/loader';
 import VideoBackground from './src/background';
