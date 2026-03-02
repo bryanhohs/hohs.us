@@ -31,7 +31,7 @@ const theme = createTheme({
   },
   cssVariables: true,
   typography: {
-    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
+    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
     h3: {
       fontWeight: 900,
       fontSize: '2.75rem',
