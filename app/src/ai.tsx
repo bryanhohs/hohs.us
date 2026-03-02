@@ -4,7 +4,7 @@ import { smoothStream, streamText } from 'ai';
 
 async function generateAiText(): Promise<string> {
   try {
-    const { text } = await streamText({
+    const { text } = streamText({
       model: google(config.gemini_model),
       maxOutputTokens: config.gemini_tokens,
       temperature: config.gemini_temp,
