@@ -1,7 +1,6 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ['localhost'],
   devIndicators: false,
   cacheComponents: false,
   compress: true,
