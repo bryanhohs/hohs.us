@@ -26,10 +26,10 @@
     }
   },
   "json": {
-		"parser": {
-			"allowComments": true,
-			"allowTrailingCommas": true
-		}
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    }
   },
   "overrides": [
     {
