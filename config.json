@@ -7,7 +7,7 @@
   "site_description": "Bryan C. Hohs is CEO of his own business and a software developer specializing in creating innovative web applications.",
   "site_title": "CEO, Tech, Entrepreneur",
   "gemini_model": "gemini-3-flash-preview",
-  "gemini_tokens": 1024,
+  "gemini_tokens": 512,
   "gemini_temp": 1.00,
   "gemini_system": "You're the owner of your own business.",
   "gemini_user": "You write clear and concise content.",
