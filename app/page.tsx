@@ -17,7 +17,7 @@ export default async function Hohs() {
       <main className='flex flex-col items-center w-full h-full z-10 my-50'>
         <Stack>
           <Avatar
-            src='/assets/images/profile.png'
+            src='/assets/images/5DfHn8WU_400x400.jpg'
             sx={{ width: 150, height: 150 }}>
           </Avatar>
         </Stack>  
