@@ -1,5 +1,5 @@
-import { grey } from '@mui/material/colors';
-import { createTheme, responsiveFontSizes } from '@mui/material';
+import { createTheme, responsiveFontSizes } from '@mui/material'
+import { grey } from '@mui/material/colors'
 
 const theme = createTheme({
   modularCssLayers: '@layer theme, base, mui, components, utilities;',
@@ -53,6 +53,6 @@ const theme = createTheme({
       },
     },
   },
-});
+})
 
-export default responsiveFontSizes(theme);
+export default responsiveFontSizes(theme)

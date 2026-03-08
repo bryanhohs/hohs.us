@@ -1,6 +1,6 @@
-import config from './config';
-import { google, GoogleLanguageModelOptions } from '@ai-sdk/google';
-import { smoothStream, streamText } from 'ai';
+import { type GoogleLanguageModelOptions, google } from '@ai-sdk/google'
+import { smoothStream, streamText } from 'ai'
+import config from './config'
 
 async function generateAiText(): Promise<string> {
   try {
@@ -15,20 +15,24 @@ async function generateAiText(): Promise<string> {
         google: {
           thinkingConfig: {
             includeThoughts: config.gemini_thought,
-            thinkingLevel: config.gemini_thinking as 'high' | 'medium' | 'low' | 'minimal'
+            thinkingLevel: config.gemini_thinking as
+              | 'high'
+              | 'medium'
+              | 'low'
+              | 'minimal',
           },
         } satisfies GoogleLanguageModelOptions,
       },
       experimental_transform: smoothStream({
         delayInMs: config.gemini_delay,
-        chunking: config.gemini_chunks as 'word' | 'line'
+        chunking: config.gemini_chunks as 'word' | 'line',
       }),
-    });
-    return (await text).replace(/[*"']/g, '');
+    })
+    return (await text).replace(/[*"']/g, '')
   } catch (error) {
-    console.error('Error generating ai:', error);
-    throw error;
+    console.error('Error generating ai:', error)
+    throw error
   }
 }
 
-export default generateAiText;
+export default generateAiText

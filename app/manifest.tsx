@@ -1,5 +1,5 @@
-import config from './src/config';
 import type { MetadataRoute } from 'next'
+import config from './src/config'
 
 export default function Manifest(): MetadataRoute.Manifest {
   return {

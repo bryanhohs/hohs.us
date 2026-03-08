@@ -2,7 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "autoApprove": true,
   "automerge": true,
-  "extends": [
-    "config:recommended"
-  ]
+  "extends": ["config:recommended"]
 }

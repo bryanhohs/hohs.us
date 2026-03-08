@@ -1,14 +1,14 @@
-import config from './src/config';
-import type { Metadata } from 'next';
-import { notoSans, notoMono } from './src/fonts';
-import { Suspense } from 'react';
-import Progress from './src/loader';
-import VideoBackground from './src/background';
-import ClientProviders from './src/ClientProviders';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/next';
-import './globals.css';
-import './src/styles.css';
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Metadata } from 'next'
+import { Suspense } from 'react'
+import VideoBackground from './src/background'
+import ClientProviders from './src/ClientProviders'
+import config from './src/config'
+import { notoMono, notoSans } from './src/fonts'
+import Progress from './src/loader'
+import './globals.css'
+import './src/styles.css'
 
 export const metadata: Metadata = {
   title: config.meta_title,
@@ -30,11 +30,31 @@ export const metadata: Metadata = {
       { url: '/assets/icons/apple-touch-icon-152x152.png', sizes: '152x152' },
     ],
     icon: [
-      { url: '/assets/icons/favicon-196x196.png', sizes: '196x196', type: 'image/png' },
-      { url: '/assets/icons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/assets/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/assets/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/assets/icons/favicon-128.png', sizes: '128x128', type: 'image/png' },
+      {
+        url: '/assets/icons/favicon-196x196.png',
+        sizes: '196x196',
+        type: 'image/png',
+      },
+      {
+        url: '/assets/icons/favicon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png',
+      },
+      {
+        url: '/assets/icons/favicon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        url: '/assets/icons/favicon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png',
+      },
+      {
+        url: '/assets/icons/favicon-128.png',
+        sizes: '128x128',
+        type: 'image/png',
+      },
     ],
   },
   other: {
@@ -45,25 +65,25 @@ export const metadata: Metadata = {
     'msapplication-wide310x150logo': '/assets/icons/mstile-310x150.png',
     'msapplication-square310x310logo': '/assets/icons/mstile-310x310.png',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
         <ClientProviders>
           <Suspense fallback={<Progress />}>
             <VideoBackground />
-              {children}
-            </Suspense>
-          </ClientProviders>
+            {children}
+          </Suspense>
+        </ClientProviders>
         <SpeedInsights />
-      <Analytics />
-    </body>
-  </html>
-  );
+        <Analytics />
+      </body>
+    </html>
+  )
 }

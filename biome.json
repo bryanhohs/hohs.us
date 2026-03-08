@@ -9,7 +9,11 @@
     "attributePosition": "auto"
   },
   "files": {
-    "includes": ["./*.json ./app/*.tsx ./app/src/*.tsx"]
+    "includes": [
+      "./*.{json,mjs,ts}",
+      "./app/*.{ts,tsx}",
+      "./app/src/*.{ts,tsx}"
+    ]
   },
   "linter": { "enabled": true, "rules": { "recommended": true } },
   "javascript": {

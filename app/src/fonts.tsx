@@ -1,11 +1,11 @@
-import { Noto_Sans, Noto_Sans_Mono } from 'next/font/google';
+import { Noto_Sans, Noto_Sans_Mono } from 'next/font/google'
 
 export const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
-  subsets: ['latin']
+  subsets: ['latin'],
 })
- 
+
 export const notoMono = Noto_Sans_Mono({
   variable: '--font-noto-sans-mono',
-  subsets: ['latin']
+  subsets: ['latin'],
 })
