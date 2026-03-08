@@ -18,6 +18,10 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
     "plugins": [
       {
         "name": "next"

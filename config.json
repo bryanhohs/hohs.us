@@ -1,4 +1,5 @@
 {
+  "$schema": "https://www.hohs.us/config.json",
   "site_home": "https://www.hohs.us",
   "site_name_short": "Bryan Hohs",
   "site_name_full": "Bryan C. Hohs",

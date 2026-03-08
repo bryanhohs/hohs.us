@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "site_home": {
+      "type": "string"
+    },
+    "site_name_short": {
+      "type": "string"
+    },
+    "site_name_full": {
+      "type": "string"
+    },
+    "site_year": {
+      "type": "number"
+    },
+    "site_url": {
+      "type": "string"
+    },
+    "site_description": {
+      "type": "string"
+    },
+    "site_title": {
+      "type": "string"
+    },
+    "gemini_model": {
+      "type": "string"
+    },
+    "gemini_tokens": {
+      "type": "number"
+    },
+    "gemini_temp": {
+      "type": "number"
+    },
+    "gemini_system": {
+      "type": "string"
+    },
+    "gemini_user": {
+      "type": "string"
+    },
+    "gemini_prompt": {
+      "type": "string"
+    },
+    "gemini_thought": {
+      "type": "boolean"
+    },
+    "gemini_thinking": {
+      "type": "string"
+    },
+    "gemini_retries": {
+      "type": "number"
+    },
+    "gemini_delay": {
+      "type": "number"
+    },
+    "gemini_chunks": {
+      "type": "string"
+    },
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "meta_keywords": {
+      "type": "string"
+    },
+    "meta_author_name": {
+      "type": "string"
+    },
+    "meta_author_url": {
+      "type": "string"
+    },
+    "meta_creator": {
+      "type": "string"
+    },
+    "meta_publisher": {
+      "type": "string"
+    },
+    "profile_phone": {
+      "type": "string"
+    },
+    "profile_sms": {
+      "type": "string"
+    },
+    "profile_link": {
+      "type": "string"
+    },
+    "profile_email": {
+      "type": "string"
+    },
+    "profile_picture": {
+      "type": "string"
+    },
+    "profile_video": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "site_home",
+    "site_name_short",
+    "site_name_full",
+    "site_year",
+    "site_url",
+    "site_description",
+    "site_title",
+    "gemini_model",
+    "gemini_tokens",
+    "gemini_temp",
+    "gemini_system",
+    "gemini_user",
+    "gemini_prompt",
+    "gemini_thought",
+    "gemini_thinking",
+    "gemini_retries",
+    "gemini_delay",
+    "gemini_chunks",
+    "meta_title",
+    "meta_description",
+    "meta_keywords",
+    "meta_author_name",
+    "meta_author_url",
+    "meta_creator",
+    "meta_publisher",
+    "profile_phone",
+    "profile_sms",
+    "profile_link",
+    "profile_email",
+    "profile_picture",
+    "profile_video"
+  ]
+}
