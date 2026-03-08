@@ -43,6 +43,7 @@ export default async function Hohs() {
                   underline="none"
                   color={grey[50]}
                   href={config.profile_phone}
+                  target="_self"
                 >
                   <PhoneIcon fontSize="large" />
                 </Link>
@@ -52,6 +53,7 @@ export default async function Hohs() {
                   underline="none"
                   color={grey[50]}
                   href={config.profile_sms}
+                  target="_self"
                 >
                   <ChatIcon fontSize="large" />
                 </Link>
@@ -71,6 +73,7 @@ export default async function Hohs() {
                   underline="none"
                   color={grey[50]}
                   href={config.profile_email}
+                  target="_self"
                 >
                   <EmailIcon fontSize="large" />
                 </Link>
