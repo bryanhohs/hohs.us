@@ -14,7 +14,7 @@ export default function Progress() {
           </Typography>
         </Stack>
       </div>
-      <div className="flex text-center z-10">
+      <div className="flex text-center z-10 mt-5">
         <Stack>
           <CircularProgress />
         </Stack>
