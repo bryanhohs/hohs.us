@@ -14,7 +14,7 @@ export default async function Hohs() {
   const geminiText = await generateAiText()
   return (
     <main className="flex flex-col items-center w-full h-full z-10 my-50">
-      <div className="flex text-center z-10">
+      <div className="flex text-center">
         <Stack>
           <Avatar
             src={config.profile_picture}
@@ -22,21 +22,21 @@ export default async function Hohs() {
           ></Avatar>
         </Stack>
       </div>
-      <div className="flex text-center z-10 mt-5">
+      <div className="flex text-center mt-5">
         <Stack>
           <Typography variant="h3" gutterBottom color={grey[50]}>
             {config.site_name_full}
           </Typography>
         </Stack>
       </div>
-      <div className="flex text-center z-10 mt-3">
+      <div className="flex text-center mt-3">
         <Stack>
           <Typography variant="body1" gutterBottom color={grey[50]}>
             {config.site_title}
           </Typography>
         </Stack>
       </div>
-      <div className="flex text-center z-10 mt-5">
+      <div className="flex text-center mt-5">
         <Stack>
           <ul className="flex flex-row list-none space-x-5">
             <li className="align-center items-center">
@@ -82,7 +82,7 @@ export default async function Hohs() {
           </ul>
         </Stack>
       </div>
-      <div className="flex text-center italic z-10 mt-5">
+      <div className="flex text-center italic mt-5">
         <Stack>
           <Grow in={true} timeout={1000}>
             <Typography variant="body2" gutterBottom color={grey[50]}>
@@ -91,7 +91,7 @@ export default async function Hohs() {
           </Grow>
         </Stack>
       </div>
-      <div className="flex text-center z-10 mt-5">
+      <div className="flex text-center mt-5">
         <Stack>
           <Link
             underline="none"
