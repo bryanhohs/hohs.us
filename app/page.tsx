@@ -39,12 +39,20 @@ export default async function Hohs() {
           <Stack>
             <ul className="flex flex-row list-none space-x-5">
               <li className="align-center items-center">
-                <Link underline="none" color={grey[50]} href={config.profile_phone}>
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href={config.profile_phone}
+                >
                   <PhoneIcon fontSize="large" />
                 </Link>
               </li>
               <li className="align-center items-center">
-                <Link underline="none" color={grey[50]} href={config.profile_sms}>
+                <Link
+                  underline="none"
+                  color={grey[50]}
+                  href={config.profile_sms}
+                >
                   <ChatIcon fontSize="large" />
                 </Link>
               </li>
