@@ -24,10 +24,10 @@
   "meta_author_url": "https://www.hohs.us",
   "meta_creator": "Bryan C. Hohs",
   "meta_publisher": "Bryan C. Hohs",
-  "profile_phone": "3124399036",
-  "profile_sms": "3124399036",
+  "profile_phone": "tel:3124399036",
+  "profile_sms": "sms:3124399036",
   "profile_link": "https://linktr.ee/bryanchohs",
-  "profile_email": "bryan.c@hohs.us",
+  "profile_email": "mailto:bryan.c@hohs.us",
   "profile_picture": "/assets/images/5DfHn8WU_400x400.jpg",
   "profile_video": "/assets/videos/hd_1920_1080_30fps.mp4"
 }
