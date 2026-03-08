@@ -27,5 +27,5 @@ next-env.d.ts
 # github
 .github/*
 .github
-.devcontainer/*
-.devcontainer
+.devcontainers/*
+.devcontainers
