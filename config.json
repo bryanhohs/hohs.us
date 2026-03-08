@@ -12,7 +12,7 @@
   "gemini_system": "You're the owner of your own business.",
   "gemini_user": "You write clear and concise content.",
   "gemini_prompt": "Generate one short sentence under 64 characters.",
-  "gemini_thought": true,
+  "gemini_thought": false,
   "gemini_thinking": "high",
   "gemini_retries": 5,
   "gemini_delay": 10,
