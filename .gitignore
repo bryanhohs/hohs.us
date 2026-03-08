@@ -22,7 +22,3 @@
 
 # typescript
 next-env.d.ts
-
-# github
-.github/*
-.github
