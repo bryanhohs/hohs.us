@@ -1,5 +1,7 @@
 'use client'
 
+import config from './config'
+
 export default function VideoBackground() {
   return (
     <video
@@ -10,7 +12,7 @@ export default function VideoBackground() {
       muted
       playsInline
     >
-      <source src="/assets/videos/hd_1920_1080_30fps.mp4" type="video/mp4" />
+      <source src={config.profile_video} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   )

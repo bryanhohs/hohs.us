@@ -31,6 +31,14 @@ type Config = {
   readonly meta_author_url: string
   readonly meta_creator: string
   readonly meta_publisher: string
+
+  // Profile
+  readonly profile_phone: string
+  readonly profile_sms: string
+  readonly profile_link: string
+  readonly profile_email: string
+  readonly profile_picture: string
+  readonly profile_video: string
 }
 
 export default config as Config

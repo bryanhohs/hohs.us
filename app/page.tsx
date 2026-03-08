@@ -17,7 +17,7 @@ export default async function Hohs() {
       <main className="flex flex-col items-center w-full h-full z-10 my-50">
         <Stack>
           <Avatar
-            src="/assets/images/5DfHn8WU_400x400.jpg"
+            src={config.profile_picture}
             sx={{ width: 150, height: 150 }}
           ></Avatar>
         </Stack>
@@ -39,12 +39,12 @@ export default async function Hohs() {
           <Stack>
             <ul className="flex flex-row list-none space-x-5">
               <li className="align-center items-center">
-                <Link underline="none" color={grey[50]} href="tel:13124399036">
+                <Link underline="none" color={grey[50]} href={config.profile_phone}>
                   <PhoneIcon fontSize="large" />
                 </Link>
               </li>
               <li className="align-center items-center">
-                <Link underline="none" color={grey[50]} href="sms:13124399036">
+                <Link underline="none" color={grey[50]} href={config.profile_sms}>
                   <ChatIcon fontSize="large" />
                 </Link>
               </li>
@@ -52,7 +52,7 @@ export default async function Hohs() {
                 <Link
                   underline="none"
                   color={grey[50]}
-                  href="https://linktr.ee/bryanchohs"
+                  href={config.profile_link}
                   target="_blank"
                 >
                   <PublicIcon fontSize="large" />
@@ -62,7 +62,7 @@ export default async function Hohs() {
                 <Link
                   underline="none"
                   color={grey[50]}
-                  href="mailto:bryan.c@hohs.us"
+                  href={config.profile_email}
                 >
                   <EmailIcon fontSize="large" />
                 </Link>
