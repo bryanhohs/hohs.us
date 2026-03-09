@@ -2,7 +2,7 @@ import ChatIcon from '@mui/icons-material/Chat'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import PublicIcon from '@mui/icons-material/Public'
-import { Avatar, Grow, Link, Stack, Typography } from '@mui/material'
+import { Avatar, Zoom, Grow, Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import generateAiText from './src/ai'
 import config from './src/config'
@@ -16,10 +16,12 @@ export default async function Hohs() {
     <main className="flex flex-col items-center w-full h-full z-10 my-50">
       <div className="flex text-center">
         <Stack>
-          <Avatar
-            src={config.profile_picture}
-            sx={{ width: 150, height: 150 }}
-          ></Avatar>
+          <Zoom in={true} timeout={1000}>
+            <Avatar
+              src={config.profile_picture}
+              sx={{ width: 150, height: 150 }}
+            ></Avatar>
+          </Zoom>
         </Stack>
       </div>
       <div className="flex text-center mt-5">
