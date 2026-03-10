@@ -9,7 +9,7 @@ export default function Progress() {
     <div className="flex flex-col items-center w-full h-full z-10 my-75">
       <div className="flex text-center">
         <Stack>
-          <Typography variant="h3" gutterBottom color={grey[50]}>
+          <Typography variant="h3" color={grey[50]}>
             Loading...
           </Typography>
         </Stack>

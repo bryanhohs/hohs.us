@@ -8,14 +8,14 @@ export default function NotFound() {
     <div className="flex flex-col items-center w-full h-full z-10 my-75">
       <div className="flex text-center">
         <Stack>
-          <Typography variant="h3" gutterBottom color={grey[50]}>
+          <Typography variant="h3" color={grey[50]}>
             404: Not Found
           </Typography>
         </Stack>
       </div>
       <div className="flex text-center mt-3">
         <Stack>
-          <Typography variant="body1" gutterBottom color={grey[50]}>
+          <Typography variant="body1" color={grey[50]}>
             The file you requested was not found.
           </Typography>
         </Stack>

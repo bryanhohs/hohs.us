@@ -26,14 +26,14 @@ export default async function Hohs() {
       </div>
       <div className="flex text-center mt-5">
         <Stack>
-          <Typography variant="h3" gutterBottom color={grey[50]}>
+          <Typography variant="h3" color={grey[50]}>
             {config.site_name_full}
           </Typography>
         </Stack>
       </div>
       <div className="flex text-center mt-3">
         <Stack>
-          <Typography variant="body1" gutterBottom color={grey[50]}>
+          <Typography variant="body1" color={grey[50]}>
             {config.site_title}
           </Typography>
         </Stack>
@@ -87,7 +87,7 @@ export default async function Hohs() {
       <div className="flex text-center italic mt-5">
         <Stack>
           <Grow in={true} timeout={1000}>
-            <Typography variant="body2" gutterBottom color={grey[50]}>
+            <Typography variant="body2" color={grey[50]}>
               &ldquo;{geminiText}&rdquo;
             </Typography>
           </Grow>
