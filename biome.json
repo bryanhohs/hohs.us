@@ -35,14 +35,18 @@
       "allowTrailingCommas": true
     }
   },
-  "overrides": [{
+  "overrides": [
+    {
       "formatter": {
         "indentWidth": 2
       },
       "assist": {
         "actions": {
-          "organizeImports": "off"
+          "source": {
+            "organizeImports": "off"
+          }
         }
       }
-   }]
+    }
+  ]
 }
