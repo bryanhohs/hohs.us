@@ -2,7 +2,6 @@ import { createTheme, responsiveFontSizes } from '@mui/material'
 import { grey } from '@mui/material/colors'
 
 const theme = createTheme({
-  modularCssLayers: '@layer theme, base, mui, components, utilities;',
   colorSchemes: {
     light: {
       palette: {
@@ -29,16 +28,15 @@ const theme = createTheme({
       },
     },
   },
-  cssVariables: true,
   typography: {
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
     h3: {
       fontWeight: 900,
-      fontSize: '2.75rem',
+      fontSize: '3rem',
       color: grey[50],
     },
     body1: {
-      fontSize: '1.15rem',
+      fontSize: '1rem',
       color: grey[50],
     },
   },

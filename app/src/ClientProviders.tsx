@@ -13,7 +13,7 @@ export default function ClientProviders({
   children: React.ReactNode
 }) {
   return (
-    <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+    <AppRouterCacheProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Paper
