@@ -5,8 +5,8 @@ import PublicIcon from '@mui/icons-material/Public'
 import { Avatar, Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import generateAiText from './src/ai'
-import config from './src/config'
 import GrowQuote from './src/GrowQuote'
+import config from './src/config'
 
 export const dynamic = 'force-dynamic'
 export const maxDuration = 30
