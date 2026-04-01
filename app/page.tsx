@@ -2,10 +2,11 @@ import ChatIcon from '@mui/icons-material/Chat'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import PublicIcon from '@mui/icons-material/Public'
-import { Avatar, Grow, Link, Stack, Typography } from '@mui/material'
+import { Avatar, Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import generateAiText from './src/ai'
 import config from './src/config'
+import GrowQuote from './src/GrowQuote'
 
 export const dynamic = 'force-dynamic'
 export const maxDuration = 30
@@ -84,11 +85,7 @@ export default async function Hohs() {
       </div>
       <div className="flex text-center italic mt-5">
         <Stack>
-          <Grow in={true} timeout={1000}>
-            <Typography variant="body2" color={grey[50]}>
-              &ldquo;{geminiText}&rdquo;
-            </Typography>
-          </Grow>
+          <GrowQuote text={geminiText} />
         </Stack>
       </div>
       <div className="flex text-center mt-5">
