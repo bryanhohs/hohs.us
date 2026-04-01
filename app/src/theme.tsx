@@ -40,6 +40,12 @@ const theme = createTheme({
     body1: {
       fontSize: '1rem',
       color: grey[50],
+      fontStyle: 'normal',
+    },
+    body2: {
+      fontSize: '1rem',
+      color: grey[50],
+      fontStyle: 'italic',
     },
   },
   components: {

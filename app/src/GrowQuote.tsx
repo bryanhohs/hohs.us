@@ -13,7 +13,7 @@ export default function GrowQuote({ text }: { text: string }) {
 
   return (
     <Grow in={visible} timeout={1000}>
-      <Typography variant="body1" color={grey[900]}>
+      <Typography variant="body2" color={grey[50]}>
         &ldquo;{text}&rdquo;
       </Typography>
     </Grow>

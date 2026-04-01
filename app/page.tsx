@@ -83,7 +83,7 @@ export default async function Hohs() {
           </ul>
         </Stack>
       </div>
-      <div className="flex text-center italic mt-5">
+      <div className="flex text-center mt-5">
         <Stack>
           <GrowQuote text={geminiText} />
         </Stack>
