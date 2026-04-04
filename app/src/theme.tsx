@@ -31,21 +31,24 @@ const theme = createTheme({
   },
   cssVariables: true,
   typography: {
-    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
-    h3: {
-      fontWeight: 900,
-      fontSize: '3rem',
-      color: grey[50],
-    },
     body1: {
-      fontSize: '1rem',
       color: grey[50],
+      fontSize: '1rem',
       fontStyle: 'normal',
+      fontWeight: 'normal',
     },
     body2: {
-      fontSize: '1rem',
       color: grey[50],
+      fontSize: '1rem',
       fontStyle: 'italic',
+      fontWeight: 'normal',
+    },
+    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
+    h3: {
+      color: grey[50],
+      fontSize: '3rem',
+      fontStyle: 'normal',
+      fontWeight: 900,
     },
   },
   components: {
