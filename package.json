@@ -11,7 +11,7 @@
     "format": "pnpx @biomejs/biome format --write"
   },
   "dependencies": {
-    "@ai-sdk/google": "^3.0.56",
+    "@ai-sdk/google": "^3.0.58",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.9",
@@ -20,7 +20,7 @@
     "@types/stylis": "^4.2.7",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "ai": "^6.0.144",
+    "ai": "^6.0.146",
     "global": "^4.4.0",
     "next": "^16.2.2",
     "react": "^19.2.4",
@@ -33,10 +33,10 @@
     "@biomejs/biome": "^2.4.10",
     "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/postcss": "^4.2.2",
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-config-next": "^16.2.2",
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2"
