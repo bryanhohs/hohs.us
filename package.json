@@ -38,7 +38,7 @@
     "@types/stylis": "^4.2.7",
     "eslint": "^10.2.1",
     "eslint-config-next": "^16.2.4",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.4",
     "typescript": "^6.0.2"
   }
 }
