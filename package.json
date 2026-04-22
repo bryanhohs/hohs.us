@@ -31,8 +31,6 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.12",
     "@tailwindcss/cli": "^4.2.4",
-    "@tailwindcss/postcss": "^4.2.2",
-    "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
@@ -41,8 +39,6 @@
     "eslint": "^10.2.1",
     "eslint-config-next": "^16.2.4",
     "tailwindcss": "^4.2.4",
-    "typescript": "^6.0.2"
-    "tailwindcss": "^4.2.2",
     "typescript": "^6.0.3"
   }
 }
