@@ -11,7 +11,7 @@
     "format": "pnpx @biomejs/biome format --write"
   },
   "dependencies": {
-    "@ai-sdk/google": "^3.0.68",
+    "@ai-sdk/google": "^3.0.70",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.0.1",
