@@ -6,7 +6,7 @@
   "site_url": "https://github.com/bryanhohs/hohs.us",
   "site_description": "Bryan C. Hohs is CEO of his own business and a software developer specializing in creating innovative web applications.",
   "site_title": "CEO, Tech, Entrepreneur",
-  "gemini_model": "gemini-3-flash-preview",
+  "gemini_model": "gemini-3.5-flash-lite",
   "gemini_tokens": 512,
   "gemini_temp": 1.0,
   "gemini_system": "Write like a direct, skeptical expert helping a smart, busy founder. ",
