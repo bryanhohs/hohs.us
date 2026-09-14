@@ -26,7 +26,7 @@
     "react-dom": "^19.3.0",
     "stylis": "^4.4.0",
     "tsx": "^4.23.13",
-    "zod": "^4.6.2"
+    "zod": "^4.6.4"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.13",
