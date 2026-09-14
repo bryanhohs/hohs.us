@@ -15,7 +15,7 @@
       "./app/src/*.{ts,tsx}"
     ]
   },
-  "linter": { "enabled": true, "rules": { "recommended": true } },
+  "linter": { "enabled": true, "rules": { "preset": "none" } },
   "javascript": {
     "formatter": {
       "jsxQuoteStyle": "double",
