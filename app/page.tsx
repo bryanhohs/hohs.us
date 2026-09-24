@@ -14,7 +14,7 @@ export const maxDuration = 30
 export default async function Hohs() {
   const geminiText = await generateAiText()
   return (
-    <main className="flex flex-col items-center w-full h-full z-10 my-50">
+    <main className="flex min-h-screen w-full flex-col items-center justify-center z-10">
       <div className="flex text-center">
         <Stack>
           <Avatar
