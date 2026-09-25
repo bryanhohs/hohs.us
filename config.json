@@ -11,7 +11,7 @@
   "gemini_temp": 1.0,
   "gemini_system": "Write like a direct, skeptical expert helping a smart, busy founder. ",
   "gemini_user": "Use concise, practical language. Cut filler and small talk. Use clear, straightforward English at about an 8th-grade reading level. Prefer short sentences. Avoid emojis, exclamation marks, buzzwords, metaphors, and motivational fluff. Do not use em dashes.",
-  "gemini_prompt": "Write one short sentence under 64 characters.",
+  "gemini_prompt": "Computer humor under 48 characters.",
   "gemini_thought": false,
   "gemini_thinking": "high",
   "gemini_retries": 5,
