@@ -1,4 +1,4 @@
-import { type GoogleLanguageModelOptions, google } from '@ai-sdk/google'
+import { google } from '@ai-sdk/google';
 import { smoothStream, streamText } from 'ai'
 import config from './config'
 
@@ -7,7 +7,6 @@ async function generateAiText(): Promise<string> {
     const { text } = streamText({
       model: config.gemini_model,
       maxOutputTokens: config.gemini_tokens,
-      temperature: config.gemini_temp,
       maxRetries: config.gemini_retries,
       system: `${config.gemini_system}\n${config.gemini_user}`,
       prompt: config.gemini_prompt,
