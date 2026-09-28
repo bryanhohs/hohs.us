@@ -6,6 +6,7 @@ import VideoBackground from './src/background'
 import ClientProviders from './src/ClientProviders'
 import config from './src/config'
 import { notoMono, notoSans } from './src/fonts'
+import Progress from './src/loader'
 import './globals.css'
 import './src/styles.css'
 
@@ -75,7 +76,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
         <ClientProviders>
-          <Suspense>
+          <Suspense fallback={<Progress />}>
             <VideoBackground />
             {children}
           </Suspense>
