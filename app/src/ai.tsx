@@ -5,7 +5,7 @@ import config from './config'
 async function generateAiText(): Promise<string> {
   try {
     const { text } = streamText({
-      model: google(config.gemini_model),
+      model: config.gemini_model,
       maxOutputTokens: config.gemini_tokens,
       temperature: config.gemini_temp,
       maxRetries: config.gemini_retries,
