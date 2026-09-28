@@ -11,18 +11,6 @@ async function generateAiText(): Promise<string> {
       maxRetries: config.gemini_retries,
       system: `${config.gemini_system}\n${config.gemini_user}`,
       prompt: config.gemini_prompt,
-      providerOptions: {
-        google: {
-          thinkingConfig: {
-            includeThoughts: config.gemini_thought,
-            thinkingLevel: config.gemini_thinking as
-              | 'high'
-              | 'medium'
-              | 'low'
-              | 'minimal',
-          },
-        } satisfies GoogleLanguageModelOptions,
-      },
       experimental_transform: smoothStream({
         delayInMs: config.gemini_delay,
         chunking: config.gemini_chunks as 'word' | 'line',
