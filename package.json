@@ -20,6 +20,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "ai": "^7.0.118",
+    "eslint-config-next": "^16.3.6",
     "global": "^4.4.0",
     "next": "^16.3.6",
     "react": "^19.3.0",
