@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { google } from '@ai-sdk/google'
 import { smoothStream, streamText } from 'ai'
 import config from './config'
 
