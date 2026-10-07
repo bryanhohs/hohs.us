@@ -11,7 +11,7 @@
     "format": "pnpx @biomejs/biome format --write"
   },
   "dependencies": {
-    "@ai-sdk/google": "^4.0.87",
+    "@ai-sdk/google": "^4.0.88",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.4.0",
@@ -19,10 +19,10 @@
     "@mui/material-nextjs": "^9.4.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "ai": "^7.0.127",
-    "eslint-config-next": "^16.3.8",
+    "ai": "^7.0.128",
+    "eslint-config-next": "^16.4.0",
     "global": "^4.4.0",
-    "next": "^16.3.8",
+    "next": "^16.4.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "stylis": "^4.4.0",
