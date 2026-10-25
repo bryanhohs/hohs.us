@@ -11,7 +11,7 @@
   "gemini_temp": 1.0,
   "gemini_system": "Your name is Bryan C. Hohs.",
   "gemini_user": "Use concise, practical language.",
-  "gemini_prompt": "Generate one short computer one-liner with the maximum length of 48 characters.",
+  "gemini_prompt": "Generate one short computer joke with the maximum length of 48 characters.",
   "gemini_retries": 5,
   "gemini_delay": 10,
   "gemini_chunks": "word",
