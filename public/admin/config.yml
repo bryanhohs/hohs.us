@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: bryanhohs/hohs.us 
   branch: master
   site_domain: hohs.us
