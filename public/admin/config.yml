@@ -1,9 +1,20 @@
 backend:
   name: git-gateway
+  repo: bryanhohs/hohs.us 
   branch: master
+  site_domain: hohs.us
 
+publish_mode: editorial_workflow
+search: true
+show_preview_links: false
+site_url: https://hohs.us
 media_folder: 'public/images/uploads' # Folder where user uploaded files should go
 public_folder: '/images/uploads'
+
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "-"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
