@@ -19,7 +19,7 @@ slug:
 collections:
   - name: 'authors'
     label: 'Authors'
-    folder: 'contentauthors'
+    folder: 'content/authors'
     create: true
     editor:
       preview: false
