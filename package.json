@@ -16,7 +16,9 @@
     "@astrojs/netlify": "^8.2.14",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.6",
+    "@netlify/blobs": "^11.1.9",
     "astro": "^7.4.13",
-    "sharp": "^0.35.0"
+    "decap-cms-app": "^3.18.0",
+    "sharp": "^0.35.5"
   }
 }
