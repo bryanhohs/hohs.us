@@ -8,8 +8,6 @@ publish_mode: editorial_workflow
 search: true
 show_preview_links: false
 site_url: https://www.hohs.us
-media_folder: 'public/images/uploads'
-public_folder: '/images/uploads'
 
 collections:
   - name: 'blog'
@@ -20,5 +18,4 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
-      - { label: 'Featured Image', name: 'heroImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
