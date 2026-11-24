@@ -12,13 +12,13 @@ media_folder: 'public/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/content/blog"
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/content/blog'
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
-      - { label: "Featured Image", name: "heroImage", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Featured Image', name: 'heroImage', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
