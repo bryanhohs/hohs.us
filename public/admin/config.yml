@@ -8,6 +8,8 @@ publish_mode: editorial_workflow
 search: true
 show_preview_links: false
 site_url: https://www.hohs.us
+media_folder: '/public/images/uploads'
+public_folder: 'images/uploads'
 
 collections:
   - name: 'blog'
