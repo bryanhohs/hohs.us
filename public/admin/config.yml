@@ -2,7 +2,7 @@ backend:
   name: github
   repo: bryanhohs/hohs.us 
   branch: master
-  site_domain: hohs.us
+  site_domain: www.hohs.us
 
 publish_mode: editorial_workflow
 search: true
@@ -11,25 +11,7 @@ site_url: https://www.hohs.us
 media_folder: 'public/images/uploads'
 public_folder: '/images/uploads'
 
-slug:
-  encoding: 'unicode'
-  clean_accents: true
-  sanitize_replacement: '-'
-
 collections:
-  - name: 'authors'
-    label: 'Authors'
-    folder: 'src/content/authors'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
-      - { label: 'Display Name', name: 'display_name', widget: 'string' }
-      - { label: 'Position', name: 'position', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Short Name', name: 'name', widget: 'string' }
-
   - name: "blog"
     label: "Blog"
     folder: "src/content/blog"
